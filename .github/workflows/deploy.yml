@@ -25,5 +25,5 @@ jobs:
         run: |
           ssh root@89.116.212.104 <<EOF
           cd /home/neurosynca/htdocs/www.neurosynca.com
-          dploy deploy
+          dploy deploy master
           EOF
