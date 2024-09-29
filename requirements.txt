@@ -1,3 +1,4 @@
 pandas
 openpyxl
 openai==1.45.0
+requests

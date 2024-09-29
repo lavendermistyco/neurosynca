@@ -3,6 +3,7 @@ import pandas as pd
 import sqlite3
 from flask import Flask, render_template, request, redirect, url_for, session, flash, jsonify
 from openai import OpenAI
+from ml_models.find_testing_centers import find_nearby_testing_centers, recommend_test_center
 
 # Initialize OpenAI client with the environment variable
 client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
@@ -200,5 +201,20 @@ def logout():
     session.pop('chat_history', None)
     return redirect(url_for('login'))
 
+# Adding the route for the landing page
+@app.route('/landing')
+def landing():
+    return render_template('landing.html')
+
+# Route for finding nearby testing centers using the deep learning model
+@app.route('/find_centers', methods=['POST'])
+def find_centers():
+    location = request.form['location']
+    # Example: San Antonio coordinates as input (latitude,longitude)
+    recommended_center = recommend_test_center({"location": location, "type": "mental_health"})
+    
+    # Pass the recommended center to the template for rendering
+    return render_template('centers.html', center=recommended_center)
+
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
