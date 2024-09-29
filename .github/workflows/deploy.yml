@@ -23,7 +23,7 @@ jobs:
 
       - name: Deploy with Dploy
         run: |
-          ssh root@89.116.212.104 <<EOF
+          ssh neurosynca@89.116.212.104 <<EOF
           cd /home/neurosynca/htdocs/www.neurosynca.com
           dploy deploy master
           EOF
