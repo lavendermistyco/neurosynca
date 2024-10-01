@@ -1,60 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to NeuroSynca</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <title>Welcome to NeuroSynca</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #02001d;
+    }
+  </style>
+  
+  <!-- Link to static assets -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='vendors/owl-carousel/css/owl.carousel.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='vendors/owl-carousel/css/owl.theme.default.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='vendors/mdi/css/materialdesignicons.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='vendors/aos/css/aos.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.min.css') }}">
 </head>
-<body>
-    <header>
-        <h1>Welcome to NeuroSynca</h1>
-        <p>Helping bridge the gap for autism diagnosis and support in Black and Latino communities.</p>
-    </header>
 
-    <section id="about">
-        <h2>About NeuroSynca</h2>
-        <p>NeuroSynca is a platform aimed at providing accessible testing and support for individuals in underserved Black and Latino communities. We focus on early diagnosis and intervention for autism in both children and adults.</p>
-    </section>
-
-    <section id="statistics">
-        <h2>Autism Statistics</h2>
-        <p>Did you know:</p>
-        <ul>
-            <li>1 in 59 children in the U.S. is diagnosed with autism, but rates are lower among Black and Latino children due to lack of testing access.</li>
-            <li>The average cost of autism diagnosis ranges from $1,500 to $5,000, with limited coverage in minority communities.</li>
-            <li>Untreated autism in adulthood can lead to a higher unemployment rate and mental health challenges.</li>
-        </ul>
-    </section>
-
-    <section id="get-involved">
-        <h2>Get Tested</h2>
-        <p>We offer affordable, accessible testing options. Click the links below to register or login:</p>
-        <div class="button-group">
-            <a href="{{ url_for('login') }}" class="btn">Login</a>
-            <a href="{{ url_for('register') }}" class="btn">Register</a>
+<body id="body" data-spy="scroll" data-target=".navbar" data-offset="100">
+  <header id="header-section">
+    <nav class="navbar navbar-expand-lg pl-3 pl-sm-0" id="navbar">
+      <div class="container">
+        <div class="navbar-brand-wrapper d-flex w-100">
+          <!-- Add the NeuroSynca Logo here -->
+          <img src="{{ url_for('static', filename='images/Neuro.png') }}" alt="NeuroSynca Logo" class="logo-image">
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="mdi mdi-menu navbar-toggler-icon"></span>
+          </button> 
         </div>
-    </section>
+        <div class="collapse navbar-collapse navbar-menu-wrapper" id="navbarSupportedContent">
+          <ul class="navbar-nav align-items-lg-center align-items-start ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#header-section">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about-section">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#features-section">Statistics</a></li>
+            <li class="nav-item"><a class="nav-link" href="#get-involved">Get Tested</a></li>
+            <li class="nav-item"><a class="nav-link" href="#find-centers">Find a Center</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    <section id="find-centers">
-        <h2>Find a Testing Center Near You</h2>
-        <p>Enter your location (latitude, longitude) to find nearby autism, mental health, and ADHD testing centers:</p>
-        
-        <form action="{{ url_for('find_centers') }}" method="POST">
-            <label for="location">Enter your location:</label>
-            <input type="text" id="location" name="location" placeholder="e.g., 29.4241,-98.4936 (San Antonio)">
-            <button type="submit" class="btn">Find Centers</button>
-        </form>
+  <!-- Add the banner section from the template -->
+  <div class="banner">
+    <div class="container">
+      <h1 class="font-weight-semibold">Welcome to NeuroSynca</h1>
+      <h6 class="font-weight-normal text-muted pb-3">Helping bridge the gap for autism diagnosis and support in Black and Latino communities.</h6>
+      <div>
+        <a href="{{ url_for('register') }}" class="btn btn-opacity-light mr-1">Register</a>
+        <a href="{{ url_for('login') }}" class="btn btn-opacity-success ml-1">Login</a>
+      </div>
+        <!-- Embed video instead of an image -->
+        <video class="img-fluid" autoplay muted loop>
+            <source src="{{ url_for('static', filename='videos/intro.mp4') }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+  </div>
 
-        {% if center %}
-            <h3>Recommended Testing Center:</h3>
-            <p><strong>Name:</strong> {{ center.name }}</p>
-            <p><strong>Address:</strong> {{ center.address }}</p>
-        {% endif %}
-    </section>
+  <!-- About Section -->
+  <section id="about-section" class="content-wrapper">
+    <div class="container">
+      <h2>About NeuroSynca</h2>
+      <p>NeuroSynca is a platform aimed at providing accessible testing and support for individuals in underserved Black and Latino communities...</p>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2024 NeuroSynca. All rights reserved.</p>
-    </footer>
+  <!-- Statistics Section -->
+  <section id="statistics" class="content-wrapper">
+    <div class="container">
+      <h2>Autism Statistics</h2>
+      <ul>
+        <li>1 in 59 children in the U.S. is diagnosed with autism...</li>
+        <li>The average cost of autism diagnosis ranges from $1,500 to $5,000...</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Find a Testing Center Section -->
+  <section id="find-centers" class="content-wrapper">
+    <div class="container">
+      <h2>Find a Testing Center Near You</h2>
+      <form action="{{ url_for('find_centers') }}" method="POST">
+        <label for="location">Enter your location (latitude, longitude):</label>
+        <input type="text" id="location" name="location" placeholder="e.g., 29.4241,-98.4936 (San Antonio)">
+        <button type="submit" class="btn btn-opacity-light">Find Centers</button>
+      </form>
+
+      {% if center %}
+        <h3>Recommended Testing Center:</h3>
+        <p><strong>Name:</strong> {{ center.name }}</p>
+        <p><strong>Address:</strong> {{ center.address }}</p>
+      {% endif %}
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-top">
+    <p class="text-center text-muted pt-4">&copy; 2024 NeuroSynca. All rights reserved.</p>
+  </footer>
+
+  <!-- Include scripts -->
+  <script src="{{ url_for('static', filename='vendors/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendors/bootstrap/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendors/owl-carousel/js/owl.carousel.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendors/aos/js/aos.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/landingpage.js') }}"></script>
 </body>
 </html>

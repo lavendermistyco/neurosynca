@@ -2,14 +2,14 @@
 import tensorflow as tf
 import numpy as np
 import pandas as pd
+import joblib
 
 def load_model():
-    # Load the pre-trained deep learning model
-    model = tf.keras.models.load_model('ml_models/model_weights.h5')
+    # Load your pre-trained model
+    model = joblib.load('ml_models/model_weights.joblib')
     return model
 
-def predict_test_center(data):
-    model = load_model()
-    # Assuming you have preprocessed the data for the model
-    predictions = model.predict(data)
+def predict_affordable_centers(model, input_features):
+    # Assuming input_features is a NumPy array or similar
+    predictions = model.predict(input_features)
     return predictions

@@ -1,7 +1,8 @@
 import os
 import pandas as pd
 import requests
-from ml_models.model import predict_test_center  # Assuming you have a model file
+import joblib
+from .model import load_model, predict_affordable_centers 
 
 # Load the test centers CSV file
 def load_test_centers():
@@ -35,26 +36,39 @@ def find_nearby_testing_centers(location, radius=50000):
 
 # Function to preprocess input (can be customized based on your data)
 def preprocess_input(user_input):
-    # Preprocess user input to match the model's expected input format
-    # E.g., this could include normalizing coordinates, encoding information, etc.
-    return user_input
+    # Preprocess user input to convert location dtring to coordinates
+    try:
+        lat, lng = map(float, user_input['location'].split(','))
+        service_type = user_input.get('type', 'Autism Testing')
+        # Simple encoding for service type
+        service_map = {
+            'Autism Testing': 1,
+            'ADHD Testing': 2,
+            'Mental Health': 3
+        }
+        service_code = service_map.get(service_type, 0)
+        return [[lat, lng, service_code]]
+    except Exception as e:
+        print(f"Error in preprocessing input: {e}")
+        return [[0, 0, 0]]
 
 # Function to use deep learning model to recommend a test center
 def recommend_test_center(user_input):
-    # Preprocess input before sending it to the model
+    # Preprocess and load before sending it to the model
+    test_centers = load_test_centers()
+    if test_centers is None:
+        return None
+    
     preprocessed_data = preprocess_input(user_input)
     
-    # Get the model's prediction for the best test center
-    predictions = predict_test_center(preprocessed_data)
+    # Load model and make predictions
+    model = load_model()
+    predictions = predict_affordable_centers(model, preprocessed_data)
     
-    # Load test centers and map predictions
-    test_centers = load_test_centers()
-    if test_centers is not None:
-        best_center_idx = predictions.argmax()
-        best_center = test_centers.iloc[best_center_idx]
-        return best_center
-    else:
-        return "No test centers found."
+    # Assuming lower prediction indicates more affordability
+    best_center_idx = predictions.argmin()
+    best_center = test_centers.iloc[best_center_idx]
+    return best_center.to_dict()
 
 # Example Usage
 if __name__ == "__main__":
@@ -64,7 +78,7 @@ if __name__ == "__main__":
         print("Loaded Testing Centers from CSV:\n", centers_df)
 
     # Example: Find nearby centers using Google Places API
-    location = "29.4241,-98.4936"  # San Antonio, TX coordinates
+    location = "39.2904,76.6122"  # Baltimore, MD coordinates
     nearby_centers = find_nearby_testing_centers(location)
     
     if nearby_centers:
@@ -72,8 +86,12 @@ if __name__ == "__main__":
         for center in nearby_centers:
             print(center)
 
-    # Example: Recommend a testing center based on deep learning model
-    user_input = {"location": location, "type": "mental_health"}  # Modify based on input requirements
+    # Recommend a testing center based on user input
+    user_input = {"location": "39.2904,76.6122", "type": "Mental Health"}  # Example user input
     recommended_center = recommend_test_center(user_input)
-    print("\nRecommended Testing Center:")
-    print(recommended_center)
+    if recommended_center:
+        print("\nRecommended Testing Center:")
+        print(f"Name: {recommended_center['name']}")
+        print(f"Address: {recommended_center['address']}")
+    else:
+        print("No recommended center found.")

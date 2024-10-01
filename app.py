@@ -8,7 +8,7 @@ from ml_models.find_testing_centers import find_nearby_testing_centers, recommen
 # Initialize OpenAI client with the environment variable
 client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static', template_folder='templates')
 app.secret_key = 'your_secret_key_here'  # Set a secret key for session management
 
 # Path to the Excel file
@@ -70,9 +70,18 @@ def generate_summary(text_input, system_message):
     except Exception as e:
         print(f"Error generating response: {e}")
         return None
-
-@app.route('/', methods=['GET', 'POST'])
+    
+@app.route('/', methods=['GET'])
 def home():
+    # If user is not logged in, show the landing page
+    if 'username' not in session:
+        return redirect(url_for('landing'))  # Redirect to landing page
+
+    # If the user is logged in, show the chat page
+    return redirect(url_for('chat'))
+
+@app.route('/chat', methods=['GET', 'POST'])
+def chat():
     if 'username' not in session:
         return redirect(url_for('login'))
 
@@ -92,7 +101,7 @@ def home():
             store_chat_history(session['username'], 'user', user_input)
             store_chat_history(session['username'], 'ai', response)
 
-        return redirect(url_for('home'))
+        return redirect(url_for('chat'))
 
     if 'chat_history' not in session:
         session['chat_history'] = []
@@ -199,7 +208,7 @@ def register():
 def logout():
     session.pop('username', None)
     session.pop('chat_history', None)
-    return redirect(url_for('login'))
+    return redirect(url_for('landing'))
 
 # Adding the route for the landing page
 @app.route('/landing')
@@ -210,9 +219,12 @@ def landing():
 @app.route('/find_centers', methods=['POST'])
 def find_centers():
     location = request.form['location']
-    # Example: San Antonio coordinates as input (latitude,longitude)
-    recommended_center = recommend_test_center({"location": location, "type": "mental_health"})
-    
+    service_type = request.form.get('service_type', 'Autism Testing')  # Default service type
+
+    # Example: Baltimore coordinates as input (latitude,longitude)
+    user_input = {"location": location, "type": service_type}
+    recommended_center = recommend_test_center(user_input)
+
     # Pass the recommended center to the template for rendering
     return render_template('centers.html', center=recommended_center)
 

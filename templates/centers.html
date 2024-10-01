@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommended Testing Center</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>NeuroSynca</h1>
+        <p>Recommended Testing Center</p>
+    </header>
+
+    <section id="recommended-center">
+        <h2>Recommended Testing Center:</h2>
+        {% if center %}
+            <p><strong>Name:</strong> {{ center.name }}</p>
+            <p><strong>Address:</strong> {{ center.address }}</p>
+        {% else %}
+            <p>No recommended center found. Please try a different location.</p>
+        {% endif %}
+    </section>
+
+    <footer>
+        <p>&copy; 2024 NeuroSynca. All rights reserved.</p>
+    </footer>
+</body>
+</html>
