@@ -1,0 +1,461 @@
+state,city,center_name,address,latitude,longitude,testing_type,price
+Texas,Houston,Harris Health Ben Taub Hospital,"1504 Ben Taub Loop, Houston",29.71081289999999,-95.3942132,Autism,993.18
+Texas,Houston,Methodist Debakey Heart Center,"6565 Fannin Street Suite 1901, Houston",29.710866,-95.3996274,General Mental Health,446.01
+Texas,Houston,Memorial Hermann Southeast Hospital,"11800 Astoria Boulevard, Houston",29.5825751,-95.2080621,ADHD,571.74
+Texas,Houston,Houston Methodist Willowbrook Hospital,"18220 Texas 249, Houston",29.96729269999999,-95.5507625,Autism,809.12
+Texas,Houston,UTHealth Houston Psychiatry,"1941 East Road, Houston",29.694481,-95.39403899999999,Autism,858.3
+Texas,Houston,Houston Methodist Sugar Land Hospital,"16655 Southwest Freeway, Sugar Land",29.5891679,-95.63099299999999,ADHD,560.88
+Texas,Houston,The Fetal Center at Children's Memorial Hermann,"6410 Fannin Street #210, Houston",29.71371659999999,-95.3967261,General Mental Health,434.1
+Texas,Houston,Texas Children's Hospital - Abercrombie Building,"6621 Fannin Street, Houston",29.7078111,-95.40136319999999,ADHD,370.18
+Texas,Houston,HCA Houston Healthcare Northwest,"710 Cypress Creek Parkway, Houston",30.0207296,-95.4427166,ADHD,554.77
+Texas,Houston,Texas Children Hospital,"6701 Fannin Street, Houston",29.70683690000001,-95.40237110000001,ADHD,397.17
+Texas,Houston,Texas Children's Hospital West Campus,"18200 Katy Freeway, Houston",29.78780029999999,-95.6928635,ADHD,543.03
+Texas,Houston,"St. Luke's Health - Baylor St. Luke's Medical Center - Houston, TX","1101 Bates Avenue, Houston",29.7076745,-95.4004595,Autism,630.93
+Texas,Houston,Texas Medical Center,"Executive Offices, 6550 Bertner Avenue, Houston",29.70659979999999,-95.3990481,ADHD,488.97
+Texas,Houston,Team Health,"11800 Astoria Boulevard, Houston",29.5826586,-95.2072452,ADHD,407.73
+Texas,Houston,HCA Houston Healthcare Southeast,"4000 Spencer Highway, Pasadena",29.6614979,-95.1837719,Autism,656.02
+Texas,Houston,TIRR Memorial Hermann Neurological Sleep Medicine Center,"1333 Moursund Street 2nd Floor, Houston",29.7093621,-95.3940422,ADHD,525.92
+Texas,Houston,Kindred Hospital Houston Medical Center,"6441 Main Street, Houston",29.7131133,-95.3991763,ADHD,217.84
+Texas,Houston,Houston Methodist Baytown Hospital,"4401 Garth Road, Baytown",29.7684119,-94.9795683,ADHD,468.45
+Texas,Houston,Memorial Hermann Sugar Land Hospital,"17500 West Grand Parkway South, Sugar Land",29.5645472,-95.69030790000001,General Mental Health,319.43
+Texas,Houston,Aesthetic Center for Plastic Surgery,"12727 Kimberley Lane Suite 300, Houston",29.774991,-95.55814289999999,ADHD,549.83
+Texas,Dallas,"Baylor University Medical Center, part of Baylor Scott & White Health","3500 Gaston Avenue, Dallas",32.7895997,-96.7784089,General Mental Health,286.33
+Texas,Dallas,Methodist Dallas Medical Center,"1441 North Beckley Avenue, Dallas",32.7610032,-96.8254595,ADHD,538.1
+Texas,Dallas,Texas Health Presbyterian Hospital Plano,"6200 West Parker Road, Plano",33.0437069,-96.8366164,General Mental Health,412.17
+Texas,Dallas,Scottish Rite for Children,"2222 Welborn Street, Dallas",32.8021236,-96.81412519999999,Autism,446.05
+Texas,Dallas,Baylor Scott & White Medical Center - Irving,"1901 North MacArthur Boulevard, Irving",32.834711,-96.96020899999999,ADHD,543.28
+Texas,Dallas,Baylor Scott & White Medical Center - Grapevine,"1650 West College Street, Grapevine",32.9337522,-97.093764,ADHD,644.54
+Texas,Dallas,Baylor Scott & White Medical Center - Plano,"4700 Alliance Boulevard, Plano",33.0135254,-96.7906146,Autism,791.47
+Texas,Dallas,Texas Health Arlington Memorial Hospital,"800 West Randol Mill Road, Arlington",32.7489891,-97.1157765,General Mental Health,353.86
+Texas,Dallas,Texas Health Presbyterian Hospital Dallas,"8200 Walnut Hill Lane, Dallas",32.8812304,-96.76230989999999,Autism,991.66
+Texas,Dallas,Methodist Charlton Medical Center,"3500 West Wheatland Road, Dallas",32.6457322,-96.87629609999999,General Mental Health,394.02
+Texas,Dallas,Medical City Lewisville,"500 West Main Street, Lewisville",33.0454235,-97.0049828,General Mental Health,498.4
+Texas,Dallas,Carrollton Regional Medical Center,"4343 North Josey Lane, Carrollton",33.0284751,-96.8857549,ADHD,555.58
+Texas,Dallas,Medical City Arlington,"3301 Matlock Road, Arlington",32.6923814,-97.11298339999999,General Mental Health,296.33
+Texas,Dallas,Ekechukwu Kamilah D,"1935 Medical District Drive, Dallas",32.8093717,-96.836827,General Mental Health,476.26
+Texas,Dallas,Edwards Maureen D,"1935 Medical District Drive, Dallas",32.8093717,-96.836827,ADHD,578.01
+Texas,Dallas,Ritchey Jill T,"1935 Medical District Drive, Dallas",32.8093717,-96.836827,ADHD,649.59
+Texas,Dallas,Hauge Jennifer E,"1935 Medical District Drive, Dallas",32.8093717,-96.836827,Autism,442.48
+Texas,Dallas,Jones Shelton K,"1935 Medical District Drive, Dallas",32.8093717,-96.836827,Autism,501.83
+Texas,Dallas,Mockenhaupt Lindsey A,"1935 Medical District Drive, Dallas",32.8093717,-96.836827,Autism,615.18
+Texas,Dallas,Dallas Medical Center,"7 Medical Parkway, Farmers Branch",32.9154496,-96.869513,Autism,977.57
+Texas,Austin,Ascension Seton Medical Center Austin,"1201 West 38th Street, Austin",30.305207,-97.7464296,General Mental Health,125.74
+Texas,Austin,St. David's North Austin Medical Center,"12221 North Mopac Expressway, Austin",30.4116129,-97.7064293,General Mental Health,306.55
+Texas,Austin,Ascension Seton Northwest Hospital,"11113 Research Boulevard, Austin",30.4054714,-97.7437312,Autism,951.75
+Texas,Austin,St. David's Medical Center,"919 East 32nd Street, Austin",30.2898575,-97.7260089,Autism,556.49
+Texas,Austin,Cedar Park Regional Medical Center,"1401 Medical Parkway, Cedar Park",30.5321716,-97.8117102,ADHD,452.74
+Texas,Austin,Ascension Seton Hays,"6001 Kyle Parkway, Kyle",30.0084463,-97.8529453,General Mental Health,344.66
+Texas,Austin,Ascension Seton Williamson Hospital,"201 Seton Parkway, Round Rock",30.56680959999999,-97.6512068,Autism,823.98
+Texas,Austin,Baylor Scott & White Medical Center � Round Rock,"300 University Boulevard, Round Rock",30.5632925,-97.68499519999999,General Mental Health,165.76
+Texas,Austin,"Frank Hinds, MD","1401 Medical Parkway bldg b suite 419, Cedar Park",30.5325208,-97.811751,General Mental Health,420.5
+Texas,Austin,Nova Medical Centers,"8868 Research Boulevard #601, Austin",30.36944,-97.7206817,General Mental Health,441.8
+Texas,Austin,Pediatric Care of Austin,"1009 East 40th Street Suite 100, Austin",30.2964818,-97.7195759,ADHD,674.78
+Texas,Austin,"Steven M. Fass, M.D., FACS","3705 Medical Parkway #250, Austin",30.305035,-97.744059,General Mental Health,497.77
+Texas,Austin,Austin Doctor's Building,"1305 West 34th Street, Austin",30.3037242,-97.747879,ADHD,419.88
+Texas,Austin,"Austin Plastic Surgery Center - Dr. Sergio P. Maggi, FACS","3410 Far West Boulevard Suite 110, Austin",30.35246409999999,-97.75011839999999,ADHD,602.28
+Texas,Austin,"Hall Plastic Surgery & Rejuvenation MedSpa, Dr. Jeffrey Hall","300 Beardsley Lane c101, Austin",30.3129618,-97.8534453,Autism,670.03
+Texas,Austin,HealthYes.com,"106 East 6th Street, Austin",30.2681573,-97.7423917,ADHD,307.94
+Texas,Austin,St. David's Georgetown Hospital,"2000 Scenic Drive, Georgetown",30.6259898,-97.688558,General Mental Health,481.74
+Texas,Austin,Fresenius Medical Care at Heart Hospital Of Austin,"3801 North Lamar Boulevard, Austin",30.3058458,-97.74115719999999,ADHD,468.15
+Texas,Austin,St. David's Round Rock Medical Center,"2400 Round Rock Avenue, Round Rock",30.51049119999999,-97.7140142,General Mental Health,102.91
+Texas,Austin,Integral Care Administration Building,"1430 Collier Street, Austin",30.252581,-97.7661425,Autism,781.72
+Texas,San Antonio,Methodist Hospital Metropolitan,"1310 McCullough Avenue, San Antonio",29.4411887,-98.4908561,ADHD,592.9
+Texas,San Antonio,Methodist Stone Oak Hospital,"1139 East Sonterra Boulevard, San Antonio",29.6162229,-98.4743864,Autism,904.23
+Texas,San Antonio,CHRISTUS Santa Rosa Hospital - Westover Hills,"11212 Texas 151, San Antonio",29.4666868,-98.6967157,General Mental Health,123.17
+Texas,San Antonio,Wonderland of the Americas,"4522 Fredericksburg Road, Balcones Heights",29.49284879999999,-98.55130439999999,Autism,463.13
+Texas,San Antonio,Northeast Baptist Hospital,"8811 Village Drive, San Antonio",29.5197644,-98.42911099999999,General Mental Health,125.81
+Texas,San Antonio,Urology San Antonio (Westover Hills),"10431 Texas 151, San Antonio",29.4531785,-98.68449,Autism,473.32
+Texas,San Antonio,Mission Trail Baptist Hospital,"3333 Research Plaza, San Antonio",29.344963,-98.4377746,ADHD,395.09
+Texas,San Antonio,CHRISTUS Children's,"333 North Santa Rosa Street, San Antonio",29.4281027,-98.4982673,Autism,847.39
+Texas,San Antonio,Gonzaba Medical Group - Main Medical Center,"720 Pleasanton Road, San Antonio",29.3779277,-98.50388889999999,Autism,657.02
+Texas,San Antonio,Methodist Hospital Northeast,"12412 Judson Road, Live Oak",29.5526052,-98.3479471,General Mental Health,344.24
+Texas,San Antonio,Methodist Hospital Texsan,"6700 Interstate 10, San Antonio",29.489956,-98.5476801,ADHD,654.91
+Texas,San Antonio,Methodist Children's Hospital,"Children's, 7700 Floyd Curl Drive Entrance, San Antonio",29.507399,-98.5724235,Autism,357.21
+Texas,San Antonio,Urology San Antonio (Mission Trail),"3327 Research Plaza Ste 403, San Antonio",29.3450646,-98.43752409999999,General Mental Health,396.22
+Texas,San Antonio,BHS Physician Network,"3903 Wiseman Boulevard #315, San Antonio",29.4776458,-98.6950906,ADHD,526.75
+Texas,San Antonio,San Antonio Sleep Center,"8815 Village Drive, San Antonio",29.519092,-98.42947799999999,General Mental Health,348.45
+Texas,San Antonio,University Health University Hospital,"4502 Medical Drive, San Antonio",29.5078888,-98.5775051,ADHD,581.41
+Texas,San Antonio,Foundation Surgical Hospital of San Antonio,"9522 Huebner Road, San Antonio",29.5302381,-98.59004979999999,ADHD,275.64
+Texas,San Antonio,Methodist Hospital,"Main Entrance, 7700 Floyd Curl Drive, San Antonio",29.5083177,-98.5718967,Autism,429.37
+Texas,San Antonio,St. Luke's Baptist Hospital,"7930 Floyd Curl Drive, San Antonio",29.51247919999999,-98.5750695,General Mental Health,487.91
+Texas,San Antonio,Baptist Medical Center,"111 Dallas Street, San Antonio",29.4334891,-98.4923606,Autism,656.43
+Maryland,Baltimore,The Johns Hopkins Hospital,"1800 Orleans Street, Baltimore",39.2967385,-76.59273619999999,General Mental Health,306.07
+Maryland,Baltimore,Sinai Hospital,"2401 West Belvedere Avenue, Baltimore",39.35315990000001,-76.66041609999999,General Mental Health,382.54
+Maryland,Baltimore,Luminis Health Anne Arundel Medical Center,"2001 Medical Parkway, Annapolis",38.9899813,-76.53446319999999,General Mental Health,620.38
+Maryland,Baltimore,Ascension Saint Agnes Hospital,"900 South Caton Avenue, Baltimore",39.2717008,-76.6735285,ADHD,412.55
+Maryland,Baltimore,MedStar Franklin Square Medical Center,"9000 Franklin Square Drive, Baltimore",39.351473,-76.47825139999999,General Mental Health,144.26
+Maryland,Baltimore,Mercy Medical Center,"345 Saint Paul Place, Baltimore",39.2940197,-76.6135072,ADHD,841.1
+Maryland,Baltimore,Grace Medical Center,"2000 West Baltimore Street, Baltimore",39.2887439,-76.64914809999999,Autism,709.85
+Maryland,Baltimore,UM Upper Chesapeake Medical Center Bel Air,"500 Upper Chesapeake Drive, Bel Air",39.5192942,-76.3460006,ADHD,434.86
+Maryland,Baltimore,UM Laurel Medical Center,"7150 Contee Road, Laurel",39.08505419999999,-76.8832766,Autism,1407.97
+Maryland,Baltimore,University of Maryland Medical Center: Division of Hepatology,"22 South Greene Street, Baltimore",39.28867220000001,-76.6240325,ADHD,892.68
+Maryland,Baltimore,MedStar Good Samaritan Hospital,"5601 Loch Raven Boulevard, Baltimore",39.3583488,-76.5871773,ADHD,910.88
+Maryland,Baltimore,Johns Hopkins Burn Center,"4940 Eastern Avenue, Baltimore",39.2901622,-76.5471072,Autism,1025.17
+Maryland,Baltimore,Fresenius Medical Care at Anne Arundel Medical Center,"2001 Medical Parkway, Annapolis",38.99014690000001,-76.5341382,General Mental Health,784.96
+Maryland,Baltimore,Children's Medical Practice,"4940 Eastern Avenue, Baltimore",39.2910764,-76.5461639,Autism,1495.0
+Maryland,Baltimore,Sinai Pediatric Hematology/onc,"2401 West Belvedere Avenue, Baltimore",39.352541,-76.6620952,ADHD,727.78
+Maryland,Baltimore,"Dhaval Aghera, MD","2411 West Belvedere Avenue # 304, Baltimore",39.3526958,-76.6621325,General Mental Health,173.06
+Maryland,Baltimore,Johns Hopkins Bayview Medical Center,"4940 Eastern Avenue, Baltimore",39.2909559,-76.5482395,ADHD,394.33
+Maryland,Baltimore,Pavilion Pediatrics,"10755 Falls Road #260, Timonium",39.4213326,-76.66715959999999,General Mental Health,302.13
+Maryland,Baltimore,Kure Smart Pain Management,"2002 Medical Parkway #430, Annapolis",38.990596,-76.5376206,Autism,1331.77
+Maryland,Baltimore,UM Baltimore Washington Medical Center,"301 Hospital Drive, Glen Burnie",39.1379078,-76.6217513,Autism,793.98
+Maryland,Rockville,Reston Hospital Center,"1850 Town Center Parkway, Reston",38.9623483,-77.3649662,ADHD,328.34
+Maryland,Rockville,Sibley Memorial Hospital,"5255 Loughboro Road Northwest, Washington",38.936685,-77.1089582,ADHD,967.83
+Maryland,Rockville,Inova Fairfax Medical Campus,"3300 Gallows Road, Falls Church",38.85732569999999,-77.2277886,ADHD,791.8
+Maryland,Rockville,Adventist HealthCare Shady Grove Medical Center,"9901 Medical Center Drive, Rockville",39.0989698,-77.19850509999999,ADHD,466.88
+Maryland,Rockville,George Washington University Hospital,"900 23rd Street Northwest, Washington",38.9012445,-77.0507271,General Mental Health,799.33
+Maryland,Rockville,VHC Health - Virginia Hospital Center,"1701 North George Mason Drive, Arlington",38.888604,-77.12704579999999,General Mental Health,529.8
+Maryland,Rockville,Suburban Hospital,"8600 Old Georgetown Road, Bethesda",38.9978202,-77.110435,ADHD,425.53
+Maryland,Rockville,Inova Fair Oaks Hospital Emergency Room,"3600 Joseph Siewick Drive, Fairfax",38.88412209999999,-77.3800608,ADHD,930.68
+Maryland,Rockville,Inova Alexandria Hospital,"4320 Seminary Road, Alexandria",38.8221971,-77.105392,Autism,886.3
+Maryland,Rockville,The GW Medical Faculty Associates,"2150 Pennsylvania Avenue Northwest, Washington",38.9008519,-77.0485549,General Mental Health,602.51
+Maryland,Rockville,Alexander T. Augusta Military Medical Center,"9300 DeWitt Loop, Fort Belvoir",38.7056724,-77.1431551,General Mental Health,541.05
+Maryland,Rockville,UM Laurel Medical Center,"7150 Contee Road, Laurel",39.08505419999999,-76.8832766,ADHD,979.5
+Maryland,Rockville,NIH Heart Center,"8600 Old Georgetown Road, Bethesda",38.99761,-77.1099612,General Mental Health,495.92
+Maryland,Rockville,St. Elizabeths Psychiatric Hospital,"1100 Alabama Avenue Southeast, Washington",38.8478275,-76.98845270000001,Autism,1290.15
+Maryland,Rockville,Inova Mount Vernon Hospital,"2501 Parkers Lane, Alexandria",38.7397084,-77.076893,ADHD,583.89
+Maryland,Rockville,Inova L.J. Murphy Children's Hospital,"3300 Gallows Road, Falls Church",38.8565056,-77.2269634,Autism,1413.52
+Maryland,Rockville,Woodbine Rehabilitation & Healthcare Center,"2729 King Street, Alexandria",38.8162249,-77.0719611,General Mental Health,772.01
+Maryland,Rockville,Gastro Health - Alexandria - Beauregard,"1800 North Beauregard Street Suite 200, Alexandria",38.83369399999999,-77.1224342,ADHD,483.54
+Maryland,Rockville,Georgetown Neonatal Associates,"3800 Reservoir Road Northwest, Washington",38.9105479,-77.0743894,General Mental Health,772.15
+Maryland,Rockville,GW Student Health Service,"800 21st Street Northwest, Washington",38.89998110000001,-77.04714589999999,General Mental Health,370.31
+Maryland,Annapolis,The Johns Hopkins Hospital,"1800 Orleans Street, Baltimore",39.2967385,-76.59273619999999,Autism,667.35
+Maryland,Annapolis,Luminis Health Anne Arundel Medical Center,"2001 Medical Parkway, Annapolis",38.9899813,-76.53446319999999,ADHD,561.56
+Maryland,Annapolis,Ascension Saint Agnes Hospital,"900 South Caton Avenue, Baltimore",39.2717008,-76.6735285,ADHD,622.36
+Maryland,Annapolis,Mercy Medical Center,"345 Saint Paul Place, Baltimore",39.2940197,-76.6135072,ADHD,969.59
+Maryland,Annapolis,Sinai Hospital,"2401 West Belvedere Avenue, Baltimore",39.35315990000001,-76.66041609999999,ADHD,970.63
+Maryland,Annapolis,Grace Medical Center,"2000 West Baltimore Street, Baltimore",39.2887439,-76.64914809999999,Autism,1040.42
+Maryland,Annapolis,MedStar Franklin Square Medical Center,"9000 Franklin Square Drive, Baltimore",39.351473,-76.47825139999999,General Mental Health,441.98
+Maryland,Annapolis,Fresenius Medical Care at Anne Arundel Medical Center,"2001 Medical Parkway, Annapolis",38.99014690000001,-76.5341382,Autism,580.34
+Maryland,Annapolis,UM Laurel Medical Center,"7150 Contee Road, Laurel",39.08505419999999,-76.8832766,ADHD,320.13
+Maryland,Annapolis,University of Maryland Medical Center: Division of Hepatology,"22 South Greene Street, Baltimore",39.28867220000001,-76.6240325,ADHD,668.98
+Maryland,Annapolis,Johns Hopkins Burn Center,"4940 Eastern Avenue, Baltimore",39.2901622,-76.5471072,Autism,1299.84
+Maryland,Annapolis,Children's Medical Practice,"4940 Eastern Avenue, Baltimore",39.2910764,-76.5461639,ADHD,597.83
+Maryland,Annapolis,Kure Smart Pain Management,"2002 Medical Parkway #430, Annapolis",38.990596,-76.5376206,Autism,1485.39
+Maryland,Annapolis,UM Baltimore Washington Medical Center,"301 Hospital Drive, Glen Burnie",39.1379078,-76.6217513,General Mental Health,678.79
+Maryland,Annapolis,Johns Hopkins Bayview Medical Center,"4940 Eastern Avenue, Baltimore",39.2909559,-76.5482395,Autism,909.58
+Maryland,Annapolis,MedStar Good Samaritan Hospital,"5601 Loch Raven Boulevard, Baltimore",39.3583488,-76.5871773,ADHD,725.59
+Maryland,Annapolis,Johns Hopkins University Cardiologist Center,"5450 Knoll North Drive Suite 170, Columbia",39.2252749,-76.8404731,ADHD,587.64
+Maryland,Annapolis,George Washington University Hospital,"900 23rd Street Northwest, Washington",38.9012445,-77.0507271,General Mental Health,633.31
+Maryland,Annapolis,Sinai Pediatric Hematology/onc,"2401 West Belvedere Avenue, Baltimore",39.352541,-76.6620952,General Mental Health,455.74
+Maryland,Annapolis,"Dhaval Aghera, MD","2411 West Belvedere Avenue # 304, Baltimore",39.3526958,-76.6621325,Autism,1182.58
+California,Los Angeles,Valley Presbyterian Hospital,"15107 Vanowen Street, Van Nuys",34.1949645,-118.464121,General Mental Health,919.91
+California,Los Angeles,Dignity Health - California Hospital Medical Center,"1401 South Grand Avenue, Los Angeles",34.03751209999999,-118.2662568,ADHD,705.67
+California,Los Angeles,West Los Angeles VA Medical Center,"11301 Wilshire Boulevard, Los Angeles",34.0526873,-118.4529775,General Mental Health,784.27
+California,Los Angeles,Ronald Reagan UCLA Medical Center,"757 Westwood Plaza, Los Angeles",34.066399,-118.446351,General Mental Health,453.35
+California,Los Angeles,Hollywood Presbyterian Medical Center,"1300 North Vermont Avenue, Los Angeles",34.09634469999999,-118.2904587,Autism,747.82
+California,Los Angeles,Torrance Memorial Medical Center,"3330 Lomita Boulevard, Torrance",33.8105213,-118.3437184,ADHD,1385.37
+California,Los Angeles,Providence Saint Joseph Medical Center,"501 South Buena Vista Street, Burbank",34.1560974,-118.3287263,General Mental Health,966.75
+California,Los Angeles,PIH Health Good Samaritan Hospital,"1225 Wilshire Boulevard, Los Angeles",34.0544036,-118.2649564,ADHD,601.87
+California,Los Angeles,PIH Health Whittier Hospital,"12401 Washington Boulevard, Whittier",33.9690687,-118.0483086,Autism,994.81
+California,Los Angeles,Va Long Beach Healthcare Psy,"5901 East 7th Street, Long Beach",33.7783814,-118.11972,Autism,1686.17
+California,Los Angeles,USC Arcadia Hospital,"300 West Huntington Drive, Arcadia",34.1346314,-118.0416284,ADHD,1164.13
+California,Los Angeles,Adventist Health White Memorial Montebello,"309 West Beverly Boulevard, Montebello",34.0150092,-118.10016,Autism,1438.93
+California,Los Angeles,Olive View-UCLA Medical Center,"14445 Olive View Drive, Sylmar",34.32584469999999,-118.4457245,General Mental Health,901.97
+California,Los Angeles,Kaiser Permanente Downey Medical Center,"9333 Imperial Highway, Downey",33.9195971,-118.1289718,General Mental Health,623.11
+California,Los Angeles,Garfield Medical Center,"525 North Garfield Avenue, Monterey Park",34.0675446,-118.1231784,Autism,909.74
+California,Los Angeles,Adventist Health Glendale,"1509 Wilson Terrace, Glendale",34.1503274,-118.2302398,ADHD,1189.88
+California,Los Angeles,Dignity Health - Glendale Memorial Hospital and Health Center,"1420 South Central Avenue, Glendale",34.1280598,-118.2570116,ADHD,1231.92
+California,Los Angeles,Kaiser Permanente Panorama City Medical Center,"13651 Willard Street, Panorama City",34.2185988,-118.4302775,ADHD,656.92
+California,Los Angeles,Providence Cedars-Sinai Tarzana Medical Center,"18321 Clark Street, Tarzana",34.1704156,-118.5326773,General Mental Health,700.11
+California,Los Angeles,Children's Hospital Los Angeles : Pathology,"4650 Sunset Boulevard, Los Angeles",34.0979324,-118.2908656,General Mental Health,793.63
+California,San Francisco,Zuckerberg San Francisco General Hospital and Trauma Center,"1001 Potrero Avenue, San Francisco",37.7553498,-122.4054036,Autism,1429.83
+California,San Francisco,St. Rose Hospital,"27200 Calaroga Avenue, Hayward",37.63308069999999,-122.0879288,Autism,1764.98
+California,San Francisco,Kaiser Permanente Walnut Creek Medical Center,"1425 South Main Street, Walnut Creek",37.8924625,-122.0590297,General Mental Health,276.27
+California,San Francisco,San Mateo Medical Center,"222 West 39th Avenue, San Mateo",37.53093599999999,-122.300217,General Mental Health,443.29
+California,San Francisco,AHMC Seton Medical Center,"1900 Sullivan Avenue, Daly City",37.68097530000001,-122.4743458,ADHD,1013.79
+California,San Francisco,Kaiser Permanente Richmond Medical Center,"901 Nevin Avenue, Richmond",37.9372485,-122.3612569,Autism,1061.38
+California,San Francisco,Alameda Hospital,"2070 Clinton Avenue, Alameda",37.76267699999999,-122.2541547,General Mental Health,247.13
+California,San Francisco,UCSF Health St. Mary's Hospital,"450 Stanyan Street, San Francisco",37.7739514,-122.4538523,ADHD,1128.62
+California,San Francisco,Stroke Care Center: California Pacific Medical Center: Pacific Campus,"2100 Webster Street # 404, San Francisco",37.7905475,-122.4321635,ADHD,1349.92
+California,San Francisco,Kaiser Permanente South San Francisco Medical Center,"1200 El Camino Real, South San Francisco",37.65969339999999,-122.4396356,Autism,770.17
+California,San Francisco,San Francisco VA Medical Center,"4150 Clement Street, San Francisco",37.7823362,-122.50529,ADHD,781.49
+California,San Francisco,Kaiser Permanente San Francisco Medical Center,"2425 Geary Boulevard, San Francisco",37.7826471,-122.4432378,Autism,1368.99
+California,San Francisco,Neurology: UCSF Benioff Children's Hospital Oakland,"747 52nd Street, Oakland",37.8368996,-122.2671454,ADHD,1251.7
+California,San Francisco,CPMC Mission Bernal Campus & Orthopedic Institute,"3555 Cesar Chavez Street, San Francisco",37.74754109999999,-122.4211318,ADHD,925.06
+California,San Francisco,Cardiac Catheterization Laboratory: California Pacific Medical Center,"2333 Buchanan Street, San Francisco",37.79087060000001,-122.4312411,General Mental Health,231.1
+California,San Francisco,CPMC Pacific Heights Outpatient Center | 2333 Buchanan Street,"2333 Buchanan Street, San Francisco",37.790738,-122.4316945,Autism,1014.36
+California,San Francisco,Heart and Vascular Center: California Pacific Medical Center: Pacific Campus,"2333 Buchanan Street, San Francisco",37.79087060000001,-122.4312411,General Mental Health,356.66
+California,San Francisco,Surgical Services: California Pacific Medical Center: Pacific Campus,"2333 Buchanan Street, San Francisco",37.79087060000001,-122.4312411,General Mental Health,994.95
+California,San Francisco,Patient Registration Services: California Pacific Medical Center: Pacific Campus,"2333 Buchanan Street, San Francisco",37.79087060000001,-122.4312411,ADHD,534.38
+California,San Francisco,Transitional Cardiac Care Unit: California Pacific Medical Center,"2333 Buchanan Street, San Francisco",37.7908444,-122.4312719,General Mental Health,426.32
+California,San Diego,Sharp Memorial Hospital,"7901 Frost Street, San Diego",32.7997657,-117.1545869,Autism,1029.7
+California,San Diego,Sharp Mary Birch Hospital for Women & Newborns,"3003 Health Center Drive, San Diego",32.7982372,-117.1549791,Autism,1580.41
+California,San Diego,Scripps Memorial Hospital La Jolla,"9888 Genesee Avenue, La Jolla",32.8849627,-117.2250478,General Mental Health,503.68
+California,San Diego,Scripps Mercy Hospital Chula Vista,"435 H Street, Chula Vista",32.6338606,-117.0832531,ADHD,1187.85
+California,San Diego,Fresenius Medical Care at Scripps Memorial Hospital La Jolla,"10666 North Torrey Pines Road, La Jolla",32.89824290000001,-117.2428911,General Mental Health,771.65
+California,San Diego,Paradise Valley Hospital,"2400 East 4th Street, National City",32.68513859999999,-117.0828182,Autism,1301.66
+California,San Diego,Ucsd Medical Center Rad,"200 West Arbor Drive, San Diego",32.75438380000001,-117.1658336,Autism,1640.11
+California,San Diego,UC San Diego Division of Hospital Medicine,"200 West Arbor Drive # 8485, San Diego",32.7548221,-117.1658317,Autism,1546.35
+California,San Diego,VA Medical Center-San Diego,"3350 La Jolla Village Drive, San Diego",32.8749458,-117.2322794,General Mental Health,665.68
+California,San Diego,Planned Parenthood - Kearny Mesa Joan & Irwin Jacobs Center,"7035 Convoy Court, San Diego",32.8343294,-117.1650076,ADHD,679.6
+California,San Diego,US Navy Med Center-Orthopedics,"Building 1, 34800 Bob Wilson Drive # 112, San Diego",32.7273526,-117.1458916,ADHD,907.97
+California,San Diego,Naval Medical Center Nephrology,"Building 1, 34800 Bob Wilson Drive # 308, San Diego",32.7273526,-117.1458916,Autism,1722.81
+California,San Diego,Palomar Medical Center Escondido,"2185 Citracado Parkway, Escondido",33.1216516,-117.1216041,Autism,1623.07
+California,San Diego,Scripps Mercy Hospital San Diego,"4077 Fifth Avenue, San Diego",32.75149140000001,-117.1604207,ADHD,1079.2
+California,San Diego,Children's Primary Care Medical Group Carmel Valley,"11943 El Camino Real #210, San Diego",32.93610559999999,-117.23723,General Mental Health,507.63
+California,San Diego,Children's Specialist,"8010 Frost Street, San Diego",32.80156890000001,-117.1520026,ADHD,593.1
+California,San Diego,Scripps Green Hospital,"10666 North Torrey Pines Road, La Jolla",32.8973591,-117.2426975,General Mental Health,736.09
+California,San Diego,Naval Medical Center Ob/gyn,"Building 1, 34800 Bob Wilson Drive, San Diego",32.7272159,-117.1461447,ADHD,1248.14
+California,San Diego,"Howard Lyon, MD","4077 Fifth Avenue, San Diego",32.7515656,-117.16039,General Mental Health,496.88
+California,San Diego,Scripps Clinic La Jolla - Genesee Executive Plaza,"9333 Genesee Avenue UNIT 170, San Diego",32.8757013,-117.2133102,Autism,1653.99
+California,Sacramento,UC Davis Health,"4301 X Street, Sacramento",38.5536333,-121.4553785,ADHD,873.08
+California,Sacramento,Mercy San Juan Medical Center,"6501 Coyle Avenue, Carmichael",38.6696173,-121.3140834,General Mental Health,429.65
+California,Sacramento,Kaiser Permanente South Sacramento Medical Center,"6600 Bruceville Road, Sacramento",38.4698781,-121.4231009,ADHD,956.59
+California,Sacramento,Sutter Medical Center | Ose Adams Medical Pavilion,"2825 Capitol Avenue, Sacramento",38.5714403,-121.4697669,ADHD,793.05
+California,Sacramento,Mercy Hospital of Folsom,"1650 Creekside Drive, Folsom",38.670333,-121.1458461,General Mental Health,720.91
+California,Sacramento,General Surgery: Sutter Capitol Pavilion (Sacramento): Sutter Medical Foundation,"2725 Capitol Avenue #402, Sacramento",38.5707329,-121.4708629,Autism,1209.27
+California,Sacramento,Kaiser Permanente Sacramento Medical Center,"2025 Morse Avenue, Sacramento",38.6021267,-121.3924928,ADHD,944.62
+California,Sacramento,Sutter Capitol Pavilion ENT & Audiology,"2725 Capitol Avenue dept 404, Sacramento",38.57115539999999,-121.4707956,General Mental Health,277.6
+California,Sacramento,Sutter Davis Hospital,"2000 Sutter Place, Davis",38.56257069999999,-121.7707566,General Mental Health,336.24
+California,Sacramento,Post Acute Care Unit: Sutter Davis Hospital,"2000 Sutter Place, Davis",38.5629168,-121.7713007,ADHD,598.31
+California,Sacramento,Gift Shop: Sutter Davis Hospital,"2000 Sutter Place 1st Floor, Davis",38.5628715,-121.7712891,General Mental Health,726.91
+California,Sacramento,Sutter Urgent Care - Sacramento,"1201 Alhambra Boulevard #230, Sacramento",38.5702045,-121.4659766,General Mental Health,502.66
+California,Sacramento,Center for Living Health,"800 Howe Avenue Ste 370, Sacramento",38.5810547,-121.4142778,General Mental Health,588.0
+California,Sacramento,Mercy General Hospital,"4001 J Street, Sacramento",38.5706208,-121.4528939,General Mental Health,845.85
+California,Sacramento,DaVita South Sacramento Dialysis Center,"8275 Bruceville Road, Sacramento",38.4572048,-121.4171345,ADHD,1333.74
+California,Sacramento,Sutter Urgent Care - Davis,"2020 Sutter Place # 101, Davis",38.5625287,-121.7715694,Autism,838.04
+California,Sacramento,Sutter Urgent Care - Elk Grove,"8170 Laguna Boulevard #113, Elk Grove",38.42099590000001,-121.404887,ADHD,1141.92
+California,Sacramento,Woodland Memorial Hospital,"1325 Cottonwood Street, Woodland",38.6641615,-121.7921879,General Mental Health,538.07
+California,Sacramento,Transplant Nephrology: Sutter Pacific Medical Foundation: Roseville,"151 North Sunrise Avenue #611, Roseville",38.74685089999999,-121.2643377,ADHD,814.16
+California,Sacramento,Sacramento VA Medical Center,"10535 Hospital Way, Mather",38.5725922,-121.2966576,General Mental Health,403.94
+New York,New York City,Maimonides Medical Center,"4802 10th Avenue, Brooklyn",40.6396041,-73.99869290000001,ADHD,1326.85
+New York,New York City,NYC Health + Hospitals/Harlem,"506 Lenox Avenue, New York",40.8143104,-73.93950869999999,Autism,805.35
+New York,New York City,Long Island Jewish Medical Center,"270-5 76th Avenue, Queens",40.7545864,-73.7076878,General Mental Health,542.64
+New York,New York City,Englewood Hospital,"350 Engle Street, Englewood",40.90418859999999,-73.9686639,ADHD,646.67
+New York,New York City,Chilton Medical Center,"97 West Parkway, Pompton Plains",40.9584357,-74.309764,General Mental Health,838.95
+New York,New York City,Mount Sinai Queens,"25-10 30th Avenue, Long Island City",40.7680983,-73.9248696,ADHD,860.55
+New York,New York City,Overlook Medical Center,"99 Beauvoir Avenue, Summit",40.7127936,-74.3536318,General Mental Health,543.79
+New York,New York City,St. Joseph's University Medical Center,"703 Main Street, Paterson",40.9027672,-74.1656275,General Mental Health,623.36
+New York,New York City,The Valley Hospital,"4 Valley Health Plaza, Paramus",40.9649595,-74.07172849999999,General Mental Health,446.74
+New York,New York City,One Brooklyn Health-Brookdale University Hospital Medical Center,"1 Brookdale Plaza, Brooklyn",40.65492330000001,-73.9122805,Autism,1316.77
+New York,New York City,Mount Sinai Beth Israel,"281 1st Avenue, New York",40.7331881,-73.9820909,Autism,778.27
+New York,New York City,Jersey City Medical Center,"355 Grand Street, Jersey City",40.7163016,-74.0503916,General Mental Health,348.97
+New York,New York City,Mount Sinai West,"1000 10th Avenue, New York",40.76983909999999,-73.98716639999999,Autism,1689.94
+New York,New York City,NYC Health + Hospitals/Metropolitan,"1901 1st Avenue, New York",40.7850202,-73.9448902,ADHD,535.27
+New York,New York City,NewYork-Presbyterian Queens Hospital,"56-45 Main Street, Flushing",40.7472479,-73.8253356,ADHD,1393.83
+New York,New York City,Flushing Hospital Medical Center,"4500 Parsons Boulevard, Flushing",40.75546670000001,-73.8161975,ADHD,576.48
+New York,New York City,University Hospital,"150 Bergen Street, Newark",40.740324,-74.1893163,General Mental Health,398.25
+New York,New York City,NY Midtown OB/GYN,"800 2nd Avenue Rm 815, New York",40.7500553,-73.9716691,Autism,1309.58
+New York,New York City,Long Island Jewish Forest Hills,"102-01 66th Road, Forest Hills",40.7289817,-73.8516337,ADHD,834.86
+New York,New York City,"NYC Health + Hospitals/Gotham Health, Gouverneur","227 Madison Street, New York",40.713208,-73.987787,Autism,1795.93
+New York,Buffalo,Sisters of Charity Hospital,"2157 Main Street, Buffalo",42.9284109,-78.848085,ADHD,626.49
+New York,Buffalo,Skilled Nursing Facility at Ecmc,"462 Grider Street, Buffalo",42.9254225,-78.8313324,ADHD,1354.65
+New York,Buffalo,Mercy Hospital of Buffalo,"565 Abbott Road, Buffalo",42.84776040000001,-78.8131975,Autism,889.27
+New York,Buffalo,Buffalo Cardiology & Pulmonary Associates,"6460 Main Street, Williamsville",42.9664803,-78.7127891,Autism,1707.76
+New York,Buffalo,"Bela Ajtai, MD","3980 Sheridan Drive, Buffalo",42.97936709999999,-78.786507,Autism,1352.94
+New York,Buffalo,Mercy Ambulatory Care Center,"3669 Southwestern Boulevard, Orchard Park",42.7803611,-78.77263190000001,General Mental Health,817.83
+New York,Buffalo,Marian Professional Center,"515 Abbott Road, Buffalo",42.8491781,-78.8141663,Autism,1158.44
+New York,Buffalo,Kenmore Mercy Hospital,"2950 Elmwood Avenue, Buffalo",42.9776705,-78.87994859999999,ADHD,666.71
+New York,Buffalo,Lindamer Dawn M,"295 Essjay Road, Williamsville",42.9742878,-78.7367589,Autism,1468.25
+New York,Buffalo,DeGraff Memorial Hospital,"445 Tremont Street, North Tonawanda",43.0253283,-78.86268969999999,ADHD,1398.74
+New York,Buffalo,Windsong Radiology Group PC,"55 Spindrift Drive, Williamsville",42.96455599999999,-78.7166553,General Mental Health,490.56
+New York,Buffalo,BryLin Hospital,"1263 Delaware Avenue, Buffalo",42.9183778,-78.8677498,General Mental Health,896.61
+New York,Buffalo,Buffalo Psychiatric Center,"400 Forest Avenue, Buffalo",42.928764,-78.8803259,ADHD,1150.18
+New York,Buffalo,Southwestern Medical Associates,"3045 Southwestern Boulevard #108, Orchard Park",42.8018841,-78.73950959999999,General Mental Health,496.54
+New York,Buffalo,"Dr. Saralyn Notaro-Rietz, MD, Back of the Eye","4476 Main Street Suite 114, Snyder",42.96358679999999,-78.7846416,General Mental Health,771.94
+New York,Buffalo,Niagara Falls Memorial Medical Center,"621 10th Street, Niagara Falls",43.0934794,-79.0494705,Autism,1066.55
+New York,Buffalo,Niagara Health - Niagara Falls Site,"5546 Portage Road, Niagara Falls",43.0942273,-79.0894642,Autism,1114.76
+New York,Buffalo,Buffalo Rheumatology and Medicine,"3055 Southwestern Boulevard #100, Orchard Park",42.8013285,-78.7409093,General Mental Health,924.26
+New York,Buffalo,DeGraff Medical Park,"445 Tremont Street, North Tonawanda",43.025128,-78.862146,General Mental Health,987.37
+New York,Buffalo,Mount St. Mary's Hospital,"5300 Military Road, Lewiston",43.1539653,-79.0327614,Autism,1164.32
+New York,Albany,Albany Medical Center,"43 New Scotland Avenue, Albany",42.6535229,-73.77646779999999,General Mental Health,718.89
+New York,Albany,Ellis Hospital,"1101 Nott Street, Schenectady",42.8201106,-73.9160048,General Mental Health,693.73
+New York,Albany,New York Oncology Hematology - Albany Cancer Center Suite 1,"400 Patroon Creek Boulevard Suite 1, Albany",42.6837497,-73.80312370000001,Autism,1431.15
+New York,Albany,Albany Stratton VA Medical Center,"113 Holland Avenue, Albany",42.6508724,-73.7719553,Autism,953.64
+New York,Albany,Albany Memorial Campus,"600 Northern Boulevard, Albany",42.6742279,-73.7485268,General Mental Health,731.12
+New York,Albany,Albany Med South Clinical Campus,"25 Hackett Boulevard, Albany",42.645909,-73.78015669999999,Autism,1619.98
+New York,Albany,"Whitney M. Young, Jr. Health Center - Albany","920 Lark Drive, Albany",42.6617826,-73.74821299999999,General Mental Health,829.26
+New York,Albany,Bellevue Woman's Center,"2210 Troy-Schenectady Road, Niskayuna",42.79264879999999,-73.8789841,General Mental Health,902.33
+New York,Albany,Ellis Hospital -Wright Heart Center,"1101 Nott Street, Schenectady",42.8197375,-73.9169685,Autism,1588.87
+New York,Albany,St. Peter's Maternal Fetal Medicine,"400 Patroon Creek Boulevard, Albany",42.6837497,-73.80312370000001,Autism,830.1
+New York,Albany,Capital Region Family Health Care - East Greenbush,"2 Empire Drive #100, Rensselaer",42.6308184,-73.7030791,Autism,1520.34
+New York,Albany,St. Peter�s Hospital - Cardiac Care Center,"315 South Manning Boulevard, Albany",42.656515,-73.8029087,General Mental Health,350.34
+New York,Albany,"Glorimar Atiles, MD","319 South Manning Boulevard Suite 304, Albany",42.6552063,-73.8050947,Autism,991.26
+New York,Albany,St. Peter's Hospital Foundation,"310 South Manning Boulevard, Albany",42.655306,-73.804878,Autism,748.08
+New York,Albany,"Jason Heckman, MD","319 South Manning Boulevard Suite 304, Albany",42.6552063,-73.8050947,ADHD,660.35
+New York,Albany,Capital District Psychiatric Cn,"75 New Scotland Avenue, Albany",42.6542931,-73.7803729,General Mental Health,512.07
+New York,Albany,Ellis Medicine - Medical Center of Clifton Park,"103 Sitterly Road, Clifton Park",42.8543491,-73.7747243,General Mental Health,887.25
+New York,Albany,Albany Medical Center-South,"628 Madison Avenue, Albany",42.6561879,-73.77477209999999,ADHD,844.91
+New York,Albany,Piper Jr Donald J,"47 New Scotland Avenue, Albany",42.6531715,-73.7761001,ADHD,1296.7
+New York,Albany,Berkshire Medical Center,"725 North Street, Pittsfield",42.4598714,-73.2490341,ADHD,1128.23
+Georgia,Atlanta,Piedmont Atlanta,"1968 Peachtree Road Northwest, Atlanta",33.8088868,-84.394939,Autism,1216.91
+Georgia,Atlanta,Children's Healthcare of Atlanta - Scottish Rite Hospital,"1001 Johnson Ferry Road Northeast, Atlanta",33.9057318,-84.3540171,ADHD,798.0
+Georgia,Atlanta,Northside Hospital Atlanta,"1000 Johnson Ferry Road Northeast, Atlanta",33.9091662,-84.3538288,Autism,1166.57
+Georgia,Atlanta,Wellstar Kennestone Hospital,"677 Church Street, Marietta",33.9698776,-84.5516251,General Mental Health,216.75
+Georgia,Atlanta,Laureate Medical Group,"1110 West Peachtree Street Northwest, Atlanta",33.7850825,-84.3883226,ADHD,943.68
+Georgia,Atlanta,Northside Hospital Gwinnett,"1000 Medical Center Boulevard, Lawrenceville",33.96315920000001,-84.017493,Autism,1473.0
+Georgia,Atlanta,Southern Regional Medical Center,"11 Upper Riverdale Road, Riverdale",33.57944569999999,-84.3895388,ADHD,739.96
+Georgia,Atlanta,Piedmont Fayette,"1255 Highway 54 West, Fayetteville",33.4527476,-84.5081318,General Mental Health,128.67
+Georgia,Atlanta,Emory University Hospital Smyrna,"3949 South Cobb Drive Southeast, Smyrna",33.85780640000001,-84.5131942,ADHD,565.64
+Georgia,Atlanta,Piedmont Henry,"1133 Eagles Landing Parkway, Stockbridge",33.5111408,-84.2271275,Autism,540.34
+Georgia,Atlanta,Piedmont Eastside Medical Center,"1700 Medical Way, Snellville",33.87690380000001,-84.0210179,General Mental Health,446.21
+Georgia,Atlanta,Wellstar North Fulton Medical Center,"3000 Hospital Boulevard, Roswell",34.0634575,-84.32014,Autism,825.57
+Georgia,Atlanta,Fresenius Medical Care at Select Specialty-Atlanta,"550 West Peachtree Street Northwest, Atlanta",33.7684944,-84.3860605,ADHD,652.52
+Georgia,Atlanta,Wellstar Windy Hill,"2540 Windy Hill Road Southeast, Marietta",33.8998502,-84.47991569999999,General Mental Health,738.07
+Georgia,Atlanta,"Neonatology Associates of Atlanta, P.C.","1001 Johnson Ferry Road Northeast, Atlanta",33.9060598,-84.3538635,General Mental Health,526.21
+Georgia,Atlanta,North Atlanta Primary Care Alpharetta,"3905 Brookside Parkway Suite 300, Alpharetta",34.0600915,-84.2491759,ADHD,784.24
+Georgia,Atlanta,Publix Pharmacy at Atlantic Station,"1380 Atlantic Drive Northwest Ste 14135, Atlanta",33.7927067,-84.3979691,ADHD,564.72
+Georgia,Atlanta,"Obi F. Ugwonali, M.D.","Dr. Obiwanne Ugwonali at Northside Office, 5505 Peachtree Dunwoody Road #600, Atlanta",33.903984,-84.35227599999999,Autism,740.35
+Georgia,Atlanta,"Atlanta Plastic Surgery Specialists, P.C.","3193 Howell Mill Road Northwest #302, Atlanta",33.842065,-84.427353,Autism,1088.04
+Georgia,Atlanta,Emory Johns Creek Hospital,"6325 Hospital Parkway, Johns Creek",34.0667005,-84.1764319,Autism,1001.22
+Georgia,Savannah,Memorial Health University Medical Center,"4700 Waters Avenue, Savannah",32.0303424,-81.089434,ADHD,792.77
+Georgia,Savannah,Georgia Regional Hospital,"1915 Eisenhower Drive, Savannah",32.0001191,-81.0821687,ADHD,786.34
+Georgia,Savannah,Savannah Children's Heart Center:,"4700 Waters Avenue Building 400, Savannah",32.0303629,-81.0885729,ADHD,517.41
+Georgia,Savannah,Hilton Head Medical Center,"25 Hospital Center Boulevard, Hilton Head Island",32.2241005,-80.7151507,ADHD,336.68
+Georgia,Savannah,Publix Pharmacy at Bluffton Commons at Belfair,"80 Baylor Drive, Bluffton",32.2779189,-80.8772149,ADHD,927.42
+Georgia,Savannah,Select Specialty Hospital - Savannah,"5353 Reynolds Street 4 South, Savannah",32.0280641,-81.0999926,ADHD,402.17
+Georgia,Savannah,Curtis V. Cooper Primary Health Care Inc,"106 East Broad Street, Savannah",32.0761981,-81.08458270000001,Autism,715.86
+Georgia,Savannah,Southeast Lung & Critical Care,"23 Main Street, Hilton Head Island",32.2190284,-80.71515649999999,General Mental Health,676.29
+Georgia,Savannah,Chatham Hospitalists,"5354 Reynolds Street #424, Savannah",32.0273187,-81.098103,Autism,407.87
+Georgia,Savannah,Coastal Carolina Hospital,"1000 Medical Center Drive, Hardeeville",32.3152138,-81.0539155,Autism,981.64
+Georgia,Savannah,Publix Pharmacy at Wilmington Island,"155 Johnny Mercer Boulevard, Savannah",32.0138404,-80.9872482,Autism,485.31
+Georgia,Savannah,Hilton Head Hospital Nutrition,"25 Hospital Center Boulevard, Hilton Head Island",32.2241556,-80.7148438,Autism,1173.0
+Georgia,Savannah,Behavioral Health & Development,"1915 Eisenhower Drive # 2, Savannah",32.00058500000001,-81.0810851,Autism,1491.21
+Georgia,Savannah,DaVita Savannah Gateway Dialysis,"5973 Ogeechee Road, Savannah",31.99636220000001,-81.25625,General Mental Health,452.42
+Georgia,Savannah,Georgia Emergency Associates,"5353 Reynolds Street, Savannah",32.0279729,-81.1002076,ADHD,495.08
+Georgia,Savannah,DaVita Savannah Riverside Dialysis,"540 East Oglethorpe Avenue, Savannah",32.0753277,-81.08585900000001,Autism,1246.1
+Georgia,Savannah,Curtis V. Cooper Primary Health Care,"349 West Bryan Street, Savannah",32.0824319,-81.10057789999999,ADHD,560.39
+Georgia,Savannah,"Mary Downing, MD","1101 Lexington Avenue, Savannah",32.0332926,-81.0907716,ADHD,661.9
+Georgia,Savannah,"Cristina Negrea, MD","1101 Lexington Avenue, Savannah",32.0332926,-81.0907716,ADHD,685.09
+Georgia,Savannah,Nurse One Inc,"4700 Metts Drive, Savannah",32.0301491,-81.0893904,ADHD,887.65
+Georgia,Augusta,Eisenhower Army Medical Center,"300 East Hospital Road, Fort Eisenhower",33.4305621,-82.1257141,ADHD,926.62
+Georgia,Augusta,Piedmont Augusta,"1350 Walton Way, Augusta",33.4707366,-81.9827533,ADHD,933.13
+Georgia,Augusta,Children's Hospital of Georgia Outpatient Rehabiliation Services,"1446 Harper Street, Augusta",33.4711383,-81.9877743,General Mental Health,318.85
+Georgia,Augusta,Select Specialty Hospital - Augusta,"1537 Walton Way, Augusta",33.4763444,-81.990331,ADHD,859.35
+Georgia,Augusta,Aiken Regional Medical Centers,"302 University Parkway, Aiken",33.5712275,-81.7617092,Autism,995.09
+Georgia,Augusta,Augusta University Medical Center,"1120 15th Street BA 8412, Augusta",33.47123199999999,-81.987562,General Mental Health,772.78
+Georgia,Augusta,Publix Pharmacy at Fury's Ferry Plaza,"403 Furys Ferry Road, Martinez",33.5301133,-82.07304189999999,General Mental Health,587.45
+Georgia,Augusta,Sports Medicine Associates,"1706 Magnolia Way, Augusta",33.47668459999999,-82.1275019,Autism,1290.86
+Georgia,Augusta,Publix Pharmacy at North Augusta Plaza,"334 East Martintown Road, North Augusta",33.4958239,-81.9623462,Autism,727.46
+Georgia,Augusta,Aiken VA Clinic,"951 Millbrook Avenue #6526, Aiken",33.5208582,-81.72002049999999,Autism,563.3
+Georgia,Augusta,CORE Linen Services,"901 R.A. Dent Boulevard, Augusta",33.4695396,-81.979866,General Mental Health,570.91
+Georgia,Augusta,RAI Dialysis Care Center,"3206 Peach Orchard Road, Augusta",33.4089773,-82.0234022,General Mental Health,564.29
+Georgia,Augusta,East Central Regional Hospital: De Lecuona Juan M MD,"3405 Mike Padgett Highway, Augusta",33.398147,-82.008533,General Mental Health,793.53
+Georgia,Augusta,Augusta Vet Center,"2050 Walton Way #100, Augusta",33.47551,-82.0068909,ADHD,735.09
+Georgia,Augusta,Trinity Home Health and Hospice,"1501 Anthony Road, Augusta",33.4675666,-82.0193626,General Mental Health,471.25
+Georgia,Augusta,Charlie Norwood VA Medical Center - Uptown Division,"1 Freedom Way, Augusta",33.46464,-82.0265953,ADHD,471.45
+Georgia,Augusta,Charlie Norwood VA Medical Center - Downtown Division,"950 15th Street, Augusta",33.4727166,-81.9889262,General Mental Health,340.4
+Georgia,Augusta,VA Downtown Division,"950 15th Street, Augusta",33.4730357,-81.9872986,ADHD,890.04
+Georgia,Augusta,Professional Center #1,"1350 Walton Way, Augusta",33.4722008,-81.9831554,Autism,576.54
+Georgia,Augusta,Professional Center #4,"D'Antignac Street, Augusta",33.4720151,-81.98049739999999,General Mental Health,736.16
+South Carolina,Charleston,MUSC Health University Medical Center,"171 Ashley Avenue, Charleston",32.7849784,-79.9472066,General Mental Health,293.93
+South Carolina,Charleston,Bon Secours St. Francis Hospital,"2095 Henry Tecklenburg Drive, Charleston",32.8085496,-80.0418384,General Mental Health,431.8
+South Carolina,Charleston,Summerville Medical Center,"295 Midland Parkway, Summerville",32.96573369999999,-80.1575356,General Mental Health,444.52
+South Carolina,Charleston,East Cooper Medical Center,"2000 Hospital Drive, Mount Pleasant",32.82122819999999,-79.8508535,Autism,785.59
+South Carolina,Charleston,Ralph H. Johnson VA Medical Center,"109 Bee Street, Charleston",32.7839427,-79.953912,General Mental Health,333.81
+South Carolina,Charleston,Roper St. Francis Mount Pleasant Hospital,"3500 North Highway 17, Mount Pleasant",32.877557,-79.769251,General Mental Health,446.42
+South Carolina,Charleston,University Medical Associates,"1 Poston Road, Charleston",32.8262903,-79.989339,General Mental Health,425.63
+South Carolina,Charleston,DaVita Charles Towne Dialysis,"1964 Ashley River Road ste d-3, Charleston",32.808393,-80.0229672,General Mental Health,204.39
+South Carolina,Charleston,DaVita Charles Towne Home Program,"1964 Ashley River Road d2, Charleston",32.8083177,-80.0231289,ADHD,454.88
+South Carolina,Charleston,University Medical Associates,"171 Ashley Avenue, Charleston",32.7850905,-79.94783389999999,Autism,793.0
+South Carolina,Charleston,M US C Infectious Disease,"135 Rutledge Avenue # 500, Charleston",32.783978,-79.9451863,Autism,899.01
+South Carolina,Charleston,MUSC Health Institute of Psychiatry,"67 President Street, Charleston",32.7847668,-79.94975989999999,General Mental Health,375.17
+South Carolina,Charleston,Roper Hospital,"316 Calhoun Street, Charleston",32.7828329,-79.9494575,Autism,930.74
+South Carolina,Charleston,Compass Health Systems,"1483 Tobias Gadson Boulevard #107, Charleston",32.8083159,-80.0314066,General Mental Health,467.91
+South Carolina,Charleston,Charleston GI,"1962 Charlie Hall Boulevard, Charleston",32.8160085,-80.0441926,Autism,376.17
+South Carolina,Charleston,Charleston ENT & Allergy - The Surgery Center of Charleston,"1849 Savage Road, Charleston",32.80706529999999,-80.025359,General Mental Health,226.2
+South Carolina,Charleston,Charleston Oncology,"2910 Tricom Street, North Charleston",32.9733673,-80.0737824,General Mental Health,288.88
+South Carolina,Charleston,Musc Pediatric Pulmonary,"135 Rutledge Avenue #8903, Charleston",32.7838635,-79.9452159,General Mental Health,266.96
+South Carolina,Charleston,Musc Pulmonary Critical Care,"135 Rutledge Avenue, Charleston",32.783978,-79.9451863,ADHD,511.64
+South Carolina,Charleston,Center For Occupational & Environmental Medicine (COEM),"7510 North Forest Drive, North Charleston",32.9387543,-80.05203499999999,Autism,606.91
+South Carolina,Columbia,Prisma Health Baptist Hospital,"Taylor at, Marion Street, Columbia",34.007225,-81.0332629,ADHD,690.88
+South Carolina,Columbia,MUSC Health Columbia Medical Center Downtown,"2435 Forest Drive, Columbia",34.01401269999999,-81.0131511,ADHD,495.31
+South Carolina,Columbia,Lexington Medical Center,"2720 Sunset Boulevard, West Columbia",34.0067608,-81.113531,General Mental Health,361.11
+South Carolina,Columbia,Prisma Health Richland Hospital,"5 Richland Medical Park Drive, Columbia",34.0278595,-81.0333775,General Mental Health,326.04
+South Carolina,Columbia,Prisma Health Internal Medicine�2 Med Park,"2 Medical Park Road #203, Columbia",34.02721049999999,-81.0357363,Autism,661.75
+South Carolina,Columbia,Consultants in Gastroenterology and the South Carolina Endoscopy Center,"131 Summer Place Drive, West Columbia",34.0042451,-81.1209918,ADHD,696.62
+South Carolina,Columbia,SCDMH Midlands Center,"8301 Farrow Road, Columbia",34.0912644,-80.97354659999999,General Mental Health,410.5
+South Carolina,Columbia,Prisma Health Family Medicine�Northeast,"115 Blarney Drive #209, Columbia",34.0819287,-80.9438413,Autism,785.52
+South Carolina,Columbia,Prisma Health Senior Primary Care,"3010 Farrow Road #300, Columbia",34.0282058,-81.0259926,Autism,354.59
+South Carolina,Columbia,Fresenius Medical Care at Intermedical Hospital Of Sc,"1301 Taylor Street, Columbia",34.00750359999999,-81.03356029999999,General Mental Health,364.39
+South Carolina,Columbia,Veterans Health Administration,"6439 Garners Ferry Road, Columbia",33.9754134,-80.9595579,ADHD,305.01
+South Carolina,Columbia,Publix Pharmacy at Lexington Place,"100 Old Cherokee Road, Lexington",33.9999365,-81.21984230000001,Autism,600.57
+South Carolina,Columbia,Nine Medical Park,"9 Medical Park Road, Columbia",34.02709470000001,-81.0314318,ADHD,297.75
+South Carolina,Columbia,Prisma Health Children's Hospital�Midlands,"7 Richland Medical Park Drive, Columbia",34.0278717,-81.03201059999999,ADHD,219.14
+South Carolina,Columbia,Publix Pharmacy at Rice Creek Village,"4611 Hard Scrabble Road, Columbia",34.1532945,-80.9131974,Autism,846.51
+South Carolina,Columbia,Piedmont Reproductive Endocrinology Group - Columbia,"2324 Sunset Boulevard, West Columbia",34.00281039999999,-81.10466,ADHD,417.02
+South Carolina,Columbia,Palmetto Pediatrics Downtown,"140 Park Central Drive, Columbia",34.0285271,-81.0394711,General Mental Health,307.07
+South Carolina,Columbia,Prisma Health Baptist Hospital Rehab,"1310 Taylor Street, Columbia",34.0065374,-81.0336286,ADHD,469.36
+South Carolina,Columbia,Prisma Health Pediatric Gastroenterology�Columbia,"14 Richland Medical Park Drive #310, Columbia",34.0275664,-81.03196179999999,General Mental Health,301.97
+South Carolina,Columbia,Prisma Health Pediatric Urology�Columbia,"9 Medical Park Road Suite 500, Columbia",34.0272101,-81.0313747,General Mental Health,176.59
+North Carolina,Charlotte,Atrium Health Pineville,"10628 Park Road, Charlotte",35.0918492,-80.8713906,General Mental Health,557.7
+North Carolina,Charlotte,Atrium Health Cabarrus,"920 Church Street North, Concord",35.4366428,-80.6020008,Autism,932.83
+North Carolina,Charlotte,Carolinas Hospitalist Group,"1000 Blythe Blvd Annex Bldg. 1st Floor, 1000 Blythe Boulevard # 1, Charlotte",35.2034162,-80.8385574,Autism,834.41
+North Carolina,Charlotte,"David G. Jacobs, MD","1000 Blythe Boulevard, Charlotte",35.2034162,-80.8385574,Autism,716.34
+North Carolina,Charlotte,Novant Health Presbyterian Medical Center : Cancer Center,"200 Hawthorne Lane, Charlotte",35.21173960000001,-80.8239292,General Mental Health,208.29
+North Carolina,Charlotte,Atrium Health Levine Children's Specialty Center,"1001 Blythe Boulevard #103, Charlotte",35.20497510000001,-80.8389033,ADHD,578.1
+North Carolina,Charlotte,"Ashley Britton Christmas, MD","1000 Blythe Boulevard, Charlotte",35.2034162,-80.8385574,Autism,880.39
+North Carolina,Charlotte,"Susan L. Evans, MD, MS","1000 Blythe Boulevard, Charlotte",35.2034162,-80.8385574,Autism,1236.21
+North Carolina,Charlotte,"Kevin W. Lobdell, MD","1000 Blythe Boulevard, Charlotte",35.2034162,-80.8385574,ADHD,694.97
+North Carolina,Charlotte,Carolinas Medical Center: Howard Matthew K MD,"1000 Blythe Boulevard, Charlotte",35.2035051,-80.83863579999999,ADHD,566.59
+North Carolina,Charlotte,Piedmont Medical Center,"222 South Herlong Avenue, Rock Hill",34.956872,-81.0507432,ADHD,659.8
+North Carolina,Charlotte,CaroMont Regional Medical Center,"2525 Court Drive, Gastonia",35.2727554,-81.14024289999999,ADHD,663.81
+North Carolina,Charlotte,Atrium Health NorthEast Pediatric Hospitalists,"920 Church Street North, Concord",35.4386951,-80.60138649999999,Autism,884.76
+North Carolina,Charlotte,Novant Health Matthews Medical Center,"1500 Matthews Township Parkway, Matthews",35.1197848,-80.71463899999999,ADHD,959.5
+North Carolina,Charlotte,Novant Health Pulmonary & Critical Care - Matthews,"1450 Matthews Township Parkway Suite 380, Matthews",35.1203783,-80.7137999,ADHD,780.22
+North Carolina,Charlotte,Novant Health Presbyterian Medical Center,"200 Hawthorne Lane, Charlotte",35.2117536,-80.8244434,ADHD,697.17
+North Carolina,Charlotte,Atrium Health Morehead Medical Plaza,"1025 Morehead Medical Drive, Charlotte",35.20563,-80.8385574,ADHD,963.96
+North Carolina,Charlotte,Atrium Health Levine Children's Jeff Gordon Children's Center,"920 Church Street North, Concord",35.4362675,-80.601987,Autism,753.82
+North Carolina,Charlotte,Lake Norman Regional Medical Center,"171 Fairview Road, Mooresville",35.5492681,-80.85416149999999,ADHD,839.86
+North Carolina,Charlotte,Fresenius Medical Care at Cmc University,"8800 North Tryon Street, Charlotte",35.3062815,-80.74723999999999,ADHD,517.15
+North Carolina,Raleigh,UNC REX Hospital,"4420 Lake Boone Trail, Raleigh",35.8180806,-78.7028387,Autism,1222.22
+North Carolina,Raleigh,Duke University Hospital,"2301 Erwin Road, Durham",36.0075097,-78.93842719999999,ADHD,374.08
+North Carolina,Raleigh,UNC Hospitals,"101 Manning Drive, Chapel Hill",35.9049367,-79.0506255,ADHD,495.09
+North Carolina,Raleigh,WakeMed Heart & Vascular - Cardiovascular & Thoracic Surgery,"3000 New Bern Avenue #1100, Raleigh",35.78479829999999,-78.589112,General Mental Health,466.2
+North Carolina,Raleigh,Cary Medical Group,"530 New Waverly Place Suite 200, Cary",35.736904,-78.776183,ADHD,498.8
+North Carolina,Raleigh,Duke University Medical Center,"200 Trent Drive, Durham",36.0037918,-78.93630209999999,ADHD,904.5
+North Carolina,Raleigh,Center Wake Med Health Care,"10010 Falls of Neuse Road #307, Raleigh",35.90837669999999,-78.5977535,General Mental Health,621.35
+North Carolina,Raleigh,Mid-Carolina Obstetrics & Gynecology,"4414 Lake Boone Trail # 300, Raleigh",35.817396,-78.7010397,General Mental Health,186.8
+North Carolina,Raleigh,Rex Heart And Vasculas Spec,"300 Health Park Drive, Garner",35.6864709,-78.57718489999999,ADHD,810.59
+North Carolina,Raleigh,"Fresenius Medical Care at Durham Regional, Hosptial","3643 North Roxboro Street, Durham",36.0367112,-78.9003224,Autism,1108.05
+North Carolina,Raleigh,Duke Children's Hospital & Health Center,"2301 Erwin Road, Durham",36.0070504,-78.9375924,Autism,411.99
+North Carolina,Raleigh,UNC Pediatrics at Knightdale,"6602 Knightdale Boulevard Suite 204, Knightdale",35.7958214,-78.5077795,General Mental Health,762.58
+North Carolina,Raleigh,Duke Medical Plaza North Duke Street,"3116 North Duke Street, Durham",36.0424119,-78.9047583,General Mental Health,186.49
+North Carolina,Raleigh,Burkhart Pediatric & Adolescent Dermatology,"135 Parkway Office Court Suite 201, Cary",35.7449836,-78.7658386,General Mental Health,155.37
+North Carolina,Raleigh,North Carolina Specialty Hospital,"3916 Ben Franklin Boulevard, Durham",36.04297010000001,-78.8968709,Autism,899.09
+North Carolina,Raleigh,"Duke Raleigh Hospital, a Campus of Duke University Hospital","3400 Wake Forest Road, Raleigh",35.82829659999999,-78.618179,General Mental Health,629.95
+North Carolina,Raleigh,WakeMed Cary Hospital,"1900 Kildaire Farm Road, Cary",35.7407034,-78.7816265,ADHD,503.78
+North Carolina,Raleigh,Carolina Family Practice & Sports Medicine - Raleigh,"8300 Health Park # 107, Raleigh",35.895684,-78.65902489999999,Autism,1077.52
+North Carolina,Raleigh,Lincoln Community Health Center,"1301 Fayetteville Street, Durham",35.9804244,-78.8978874,Autism,923.84
+North Carolina,Raleigh,Central Harnett Hospital,"215 Brightwater Drive, Lillington",35.4252771,-78.80839519999999,ADHD,800.71
+Tennessee,Nashville,TriStar Summit Medical Center,"5655 Frist Boulevard, Hermitage",36.175882,-86.60676769999999,General Mental Health,269.65
+Tennessee,Nashville,TriStar Skyline Medical Center,"3441 Dickerson Pike, Nashville",36.24498440000001,-86.750591,ADHD,328.8
+Tennessee,Nashville,Vanderbilt Student Health Center,"1210 Stevenson Center Lane, Nashville",36.143896,-86.80209769999999,General Mental Health,346.52
+Tennessee,Nashville,TriStar Southern Hills Medical Center,"391 Wallace Road, Nashville",36.0765582,-86.7218693,General Mental Health,270.39
+Tennessee,Nashville,Nashville VA Medical: Rummel David MD,"1310 24th Avenue South #116A, Nashville",36.1416999,-86.803693,ADHD,488.59
+Tennessee,Nashville,TriStar Centennial Children's Hospital,"2220 Patterson Street, Nashville",36.15353040000001,-86.8069587,General Mental Health,307.53
+Tennessee,Nashville,Saint Thomas North Tower,"2011 Murphy Avenue #400, Nashville",36.1551724,-86.8035157,General Mental Health,280.95
+Tennessee,Nashville,Nashville General Hospital,"1818 Albion Street, Nashville",36.1668387,-86.8070929,ADHD,650.42
+Tennessee,Nashville,Tennessee Maternal Fetal Medicine,"201 23rd Avenue North, Nashville",36.1509268,-86.8065565,ADHD,699.15
+Tennessee,Nashville,TriStar Centennial Medical Center,"2300 Patterson Street, Nashville",36.153857,-86.8091177,Autism,339.27
+Tennessee,Nashville,Tennessee Orthopaedic Alliance (TOA) - Hendersonville,"501 Saundersville Road, Hendersonville",36.3294486,-86.57183069999999,Autism,761.16
+Tennessee,Nashville,Bookworms Cafe,"4230 Harding Pike, Nashville",36.1286652,-86.8452282,General Mental Health,236.33
+Tennessee,Nashville,Hughston Clinic Orthopaedics at TriStar Summit,"5651 Frist Boulevard #711, Hermitage",36.1767182,-86.6083281,ADHD,314.38
+Tennessee,Nashville,Nashville Psychotherapy,"7112 Adams Drive, Fairview",35.983556,-87.12117669999999,General Mental Health,172.65
+Tennessee,Nashville,"W. Blake Garside, Jr. M.D.","8 City Boulevard Suite 100, Nashville",36.150596,-86.8199782,General Mental Health,210.16
+Tennessee,Nashville,TriStar NorthCrest Medical Center,"100 Northcrest Drive, Springfield",36.4785369,-86.8866125,Autism,636.33
+Tennessee,Nashville,Vanderbilt Hypertension Center,"1301 Medical Center Drive 2nd Floor, Nashville",36.1410989,-86.8018462,General Mental Health,414.83
+Tennessee,Nashville,"Mark R. Christofersen, M.D.","8 City Boulevard Suite 100, Nashville",36.1510389,-86.8200411,ADHD,418.18
+Tennessee,Nashville,Alvin C. York VA Medical Center,"3400 Lebanon Road, Murfreesboro",35.9147379,-86.380001,Autism,413.74
+Tennessee,Nashville,Summit Medical Associates,"5045 Old Hickory Boulevard #200, Hermitage",36.19247409999999,-86.61844769999999,General Mental Health,389.68
+Tennessee,Memphis,Methodist Le Bonheur Germantown Hospital,"7691 Poplar Avenue, Germantown",35.09003909999999,-89.8081547,Autism,862.62
+Tennessee,Memphis,Le Bonheur Children's Hospital,"848 Adams Avenue, Memphis",35.1449763,-90.0317165,Autism,881.94
+Tennessee,Memphis,Regional One Health,"877 Jefferson Avenue, Memphis",35.1419317,-90.0318681,General Mental Health,206.11
+Tennessee,Memphis,Baptist Memorial Hospital-Memphis,"6019 Walnut Grove Road, Memphis",35.12918969999999,-89.8612746,Autism,931.11
+Tennessee,Memphis,Saint Francis Hospital-Bartlett,"2986 Kate Bond Road, Bartlett",35.2070666,-89.8010699,General Mental Health,225.04
+Tennessee,Memphis,Delta Specialty Hospital,"3000 Getwell Road, Memphis",35.0669303,-89.93131939999999,ADHD,349.06
+Tennessee,Memphis,Methodist North Hospital,"3960 New Covington Pike, Memphis",35.2340285,-89.8928214,Autism,817.49
+Tennessee,Memphis,Methodist University Hospital,"1265 Union Avenue, Memphis",35.1357662,-90.01952960000001,General Mental Health,283.8
+Tennessee,Memphis,"Fresenius Medical Care at St Francis Bartlett, Acute","2986 Kate Bond Road, Memphis",35.20704849999999,-89.8005091,ADHD,263.56
+Tennessee,Memphis,Baptist Memorial Hospital-Collierville,"1500 West Poplar Avenue, Collierville",35.048583,-89.71466799999999,Autism,464.93
+Tennessee,Memphis,"Fresenius Medical Care at Medical Center, Regional","877 Jefferson Avenue, Memphis",35.1425915,-90.0320153,General Mental Health,344.32
+Tennessee,Memphis,Passport Health Memphis Travel Clinic,"4515 Poplar Avenue #325, Memphis",35.1176518,-89.9116545,Autism,570.04
+Tennessee,Memphis,Baptist Memorial Hospital-DeSoto,"7601 Southcrest Parkway, Southaven",34.9697503,-89.99696229999999,Autism,753.44
+Tennessee,Memphis,Sutherland Cardiology Clinic,"3950 New Covington Pike STE 220, Memphis",35.23538740000001,-89.89213339999999,ADHD,615.98
+Tennessee,Memphis,University Health Center,"1211 Union Avenue # 340, Memphis",35.1367602,-90.02106099999999,General Mental Health,436.82
+Tennessee,Memphis,Heart & Vascular Institute Pllc,"1211 Union Avenue, Memphis",35.1368118,-90.0211463,ADHD,616.35
+Tennessee,Memphis,Methodist Minor Medical Center - Cordova,"8035 Club Parkway, Cordova",35.1619318,-89.7939392,ADHD,455.35
+Tennessee,Memphis,Primary Healthcare of Millington,"4772 Navy Road, Millington",35.34198179999999,-89.9040972,Autism,948.21
+Tennessee,Memphis,St. Jude Patient Care Center,"262 Danny Thomas Place, Memphis",35.152901,-90.04322289999999,General Mental Health,463.06
+Tennessee,Memphis,Ut Health Science Center,"50 North Dunlap Street, Memphis",35.1440449,-90.03243719999999,ADHD,298.75
