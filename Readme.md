@@ -21,6 +21,7 @@ NeuroSynca is a mental health chatbot designed specifically for Black and Latino
 
 - Python 3.x
 - OpenAI API Key
+- Google Places API Key
 
 ### Installation
 
