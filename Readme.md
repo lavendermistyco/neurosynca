@@ -12,7 +12,9 @@ NeuroSynca is a mental health chatbot designed specifically for Black and Latino
 - 
 ![Capture24](https://github.com/user-attachments/assets/1f1d04ba-f25f-4fca-bde0-c0f61b559360)
 ![Capture33](https://github.com/user-attachments/assets/c2fa2702-126b-42f7-b1ca-61c2f16e1443)
-![Capture34](https://github.com/user-attachments/assets/cf5ced6b-96e1-4b5d-8e49-20e5cc208448)
+![54343](https://github.com/user-attachments/assets/fbb7e9a4-e742-4e77-8209-c5639696dd71)
+![54353](https://github.com/user-attachments/assets/1933e62c-dfa6-4ff8-a714-bf1d5813acb0)
+
 
 
 ## Getting Started
