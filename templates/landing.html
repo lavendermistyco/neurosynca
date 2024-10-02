@@ -87,7 +87,15 @@
       <h2>Find a Testing Center Near You</h2>
       <form action="{{ url_for('find_centers') }}" method="POST">
         <label for="location">Enter your location (latitude, longitude):</label>
-        <input type="text" id="location" name="location" placeholder="e.g., 29.4241,-98.4936 (San Antonio)">
+        <input type="text" id="location" name="location" placeholder="e.g., 39.2904,-76.6122 (Baltimore)">
+        <!-- Add testing type selection dropdown -->
+        <label for="service_type">Select Testing Type:</label>
+        <select id="service_type" name="service_type">
+            <option value="Autism Testing">Autism Testing</option>
+            <option value="ADHD Testing">ADHD Testing</option>
+            <option value="Mental Health">Mental Health</option>
+        </select>
+
         <button type="submit" class="btn btn-opacity-light">Find Centers</button>
       </form>
 
@@ -98,6 +106,7 @@
       {% endif %}
     </div>
   </section>
+  
 
   <!-- Footer -->
   <footer class="border-top">

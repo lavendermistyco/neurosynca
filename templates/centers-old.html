@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommended Testing Center</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg pl-3 pl-sm-0" id="navbar">
+        <div class="container">
+            <div class="navbar-brand-wrapper d-flex w-100">
+                <!-- NeuroSynca Logo -->
+                <img src="{{ url_for('static', filename='images/Neuro.png') }}" alt="NeuroSynca Logo" class="logo-image">
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="mdi mdi-menu navbar-toggler-icon"></span>
+                </button> 
+            </div>
+            <div class="collapse navbar-collapse navbar-menu-wrapper" id="navbarSupportedContent">
+                <ul class="navbar-nav align-items-lg-center align-items-start ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about-section">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#statistics">Statistics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#get-involved">Get Tested</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#find-centers">Find a Center</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+
+    <!-- About Section -->
+  <section id="about-section" class="content-wrapper">
+    <div class="container">
+      <h2>Recommended Testing Center</h2>
+    </div>
+  </section>
+
+    <section>
+        <h2>Testing Type:</strong> {{ center.service_type }}</h2>
+        {% if center %}
+            <p><strong>Name:</strong> {{ center.name }}</p>
+            <p><strong>Address:</strong> {{ center.address }}</p>
+            <p><strong>Predicted Price:</strong> ${{ center.predicted_price }}</p>
+        {% else %}
+            <p>No recommended center found. Please try a different location.</p>
+        {% endif %}
+    </section>
+
+    <a href="{{ url_for('landing') }}" class="btn btn-opacity-success">Go Back Home</a>
+
+    <!-- Footer -->
+  <footer class="border-top">
+    <p class="text-center text-muted pt-4">&copy; 2024 NeuroSynca. All rights reserved.</p>
+  </footer>
+</body>
+</html>

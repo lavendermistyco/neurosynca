@@ -13,6 +13,19 @@ def load_test_centers():
         print("Error: test_centers.csv file not found.")
         return None
 
+# extract city and state from Google address components
+def extract_city_state(address_components):
+    city = None
+    state = None
+
+    for component in address_components:
+        if "locality" in component["types"]:  # Extract city
+            city = component["long_name"]
+        if "administrative_area_level_1" in component["types"]:  # Extract state
+            state = component["short_name"]
+
+    return city, state
+
 # Function to find nearby testing centers using Google Places API
 def find_nearby_testing_centers(location, radius=50000):
     api_key = os.getenv('GOOGLE_API_KEY')
@@ -26,72 +39,93 @@ def find_nearby_testing_centers(location, radius=50000):
     centers = []
     if 'results' in data:
         for place in data['results']:
+            # Get the place_id to make a request for place details (for city, state)
+            place_id = place.get('place_id')
+
+            # Call Places Details API to get more detailed address information
+            details_url = f"https://maps.googleapis.com/maps/api/place/details/json?place_id={place_id}&key={api_key}"
+            detail_response = requests.get(details_url)
+            place_details = detail_response.json()
+
+            if 'result' in place_details:
+                address_components = place_details['result'].get('address_components', [])
+                city, state = extract_city_state(address_components)
+            else:
+                city, state = 'default_city', 'default_state'
+
+            # Populate center details
             center = {
                 'name': place.get('name'),
                 'address': place.get('vicinity'),
+                'latitude': place['geometry']['location']['lat'],
+                'longitude': place['geometry']['location']['lng'],
+                'city': city,
+                'state': state,
                 'place_id': place.get('place_id'),
             }
             centers.append(center)
     return centers
 
 # Function to preprocess input (can be customized based on your data)
-def preprocess_input(user_input):
-    # Preprocess user input to convert location dtring to coordinates
+def preprocess_input(lat, lng, city, state, service_type):
     try:
-        lat, lng = map(float, user_input['location'].split(','))
-        service_type = user_input.get('type', 'Autism Testing')
-        # Simple encoding for service type
-        service_map = {
-            'Autism Testing': 1,
-            'ADHD Testing': 2,
-            'Mental Health': 3
-        }
-        service_code = service_map.get(service_type, 0)
-        return [[lat, lng, service_code]]
+        model, city_encoder, state_encoder, type_encoder = load_model()
+
+        city_encoded = city_encoder.transform([city])[0]
+        state_encoded = state_encoder.transform([state])[0]
+        service_type_encoded = type_encoder.transform([service_type])[0]
+
+        return [[lat, lng, city_encoded, state_encoded, service_type_encoded]]
+
     except Exception as e:
         print(f"Error in preprocessing input: {e}")
-        return [[0, 0, 0]]
+        return [[0, 0, 0, 0, 0]]  
 
 # Function to use deep learning model to recommend a test center
-def recommend_test_center(user_input):
-    # Preprocess and load before sending it to the model
+def recommend_test_center(nearby_centers, service_type):
+    model, city_encoder, state_encoder, type_encoder = load_model() 
     test_centers = load_test_centers()
-    if test_centers is None:
+    
+    if test_centers is None or not nearby_centers:
         return None
+
+    processed_inputs = []
+    for center in nearby_centers:
+        lat, lng = center['latitude'], center['longitude']
+        city = center['city']  
+        state = center['state']  
+
+        processed_input = preprocess_input(lat, lng, city, state, service_type)
+        processed_inputs.append(processed_input[0])
+
+    predictions = model.predict(processed_inputs) 
     
-    preprocessed_data = preprocess_input(user_input)
+    for i, center in enumerate(nearby_centers):
+        center['predicted_price'] = predictions[i]
+        center['testing_type'] = service_type
     
-    # Load model and make predictions
-    model = load_model()
-    predictions = predict_affordable_centers(model, preprocessed_data)
+    nearby_centers.sort(key=lambda x: x['predicted_price'])
     
-    # Assuming lower prediction indicates more affordability
-    best_center_idx = predictions.argmin()
-    best_center = test_centers.iloc[best_center_idx]
-    return best_center.to_dict()
+    return nearby_centers[0] if nearby_centers else None
 
 # Example Usage
 if __name__ == "__main__":
-    # Example: Load the test centers from CSV
-    centers_df = load_test_centers()
-    if centers_df is not None:
-        print("Loaded Testing Centers from CSV:\n", centers_df)
+     # Example location and service type
+    location = "39.2904,-76.6122"  # Baltimore, MD
+    service_type = "Mental Health"
 
-    # Example: Find nearby centers using Google Places API
-    location = "39.2904,76.6122"  # Baltimore, MD coordinates
+    # Find nearby centers using Google Places API
     nearby_centers = find_nearby_testing_centers(location)
-    
-    if nearby_centers:
-        print("\nNearby Testing Centers from Google API:")
-        for center in nearby_centers:
-            print(center)
 
-    # Recommend a testing center based on user input
-    user_input = {"location": "39.2904,76.6122", "type": "Mental Health"}  # Example user input
-    recommended_center = recommend_test_center(user_input)
-    if recommended_center:
-        print("\nRecommended Testing Center:")
-        print(f"Name: {recommended_center['name']}")
-        print(f"Address: {recommended_center['address']}")
+    if nearby_centers:
+        # Recommend the most affordable center
+        recommended_center = recommend_test_center(nearby_centers, service_type)
+        if recommended_center:
+            print("\nRecommended Testing Center:")
+            print(f"Name: {recommended_center['name']}")
+            print(f"Address: {recommended_center['address']}")
+            print(f"Predicted Price: ${recommended_center['predicted_price']}")
+        else:
+            print("No center could be recommended.")
     else:
-        print("No recommended center found.")
+        print("No nearby centers found.")

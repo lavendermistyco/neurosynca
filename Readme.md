@@ -37,6 +37,27 @@ NeuroSynca is a mental health chatbot designed specifically for Black and Latino
     ```bash
     pip install -r requirements.txt
     ```
+### Additional Setup
+
+Before running the application, ensure the following files are present in the project directory:
+
+- `chat_history.db`
+- `users.xlsx`
+
+### Environment Variables
+
+Set your environment variables for the Google Places API and OpenAI API by adding the following lines to your `.bashrc` file:
+
+```bash
+export GOOGLE_API_KEY=your_google_api_key
+export OPENAI_API_KEY=your_openai_api_key
+```
+
+After adding these lines, reload your `.bashrc` file:
+
+```bash
+source ~/.bashrc
+```
 
 ### Running the Application
 

@@ -1,29 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recommended Testing Center</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-</head>
-<body>
-    <header>
-        <h1>NeuroSynca</h1>
-        <p>Recommended Testing Center</p>
-    </header>
+  <title>Welcome to NeuroSynca</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <section id="recommended-center">
-        <h2>Recommended Testing Center:</h2>
+  <style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #02001d;
+    }
+  </style>
+  
+  <!-- Link to static assets -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='vendors/owl-carousel/css/owl.carousel.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='vendors/owl-carousel/css/owl.theme.default.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='vendors/mdi/css/materialdesignicons.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='vendors/aos/css/aos.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.min.css') }}">
+</head>
+
+<body id="body" data-spy="scroll" data-target=".navbar" data-offset="100">
+  <header id="header-section">
+    <nav class="navbar navbar-expand-lg pl-3 pl-sm-0" id="navbar">
+      <div class="container">
+        <div class="navbar-brand-wrapper d-flex w-100">
+          <!-- Add the NeuroSynca Logo here -->
+          <img src="{{ url_for('static', filename='images/Neuro.png') }}" alt="NeuroSynca Logo" class="logo-image">
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="mdi mdi-menu navbar-toggler-icon"></span>
+          </button> 
+        </div>
+        <div class="collapse navbar-collapse navbar-menu-wrapper" id="navbarSupportedContent">
+          <ul class="navbar-nav align-items-lg-center align-items-start ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#header-section">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about-section">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#features-section">Statistics</a></li>
+            <li class="nav-item"><a class="nav-link" href="#get-involved">Get Tested</a></li>
+            <li class="nav-item"><a class="nav-link" href="#find-centers">Find a Center</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+   <!-- Recommended Section -->
+   <section id="about-section" class="content-wrapper">
+    <div class="container">
+      <h2>Recommended Testing Center</h2>
+    
+        <h3>Testing Type:</strong> {{ center.testing_type }}</h3>
         {% if center %}
             <p><strong>Name:</strong> {{ center.name }}</p>
             <p><strong>Address:</strong> {{ center.address }}</p>
+            <p><strong>Predicted Price:</strong> ${{ center.predicted_price }}</p>
         {% else %}
             <p>No recommended center found. Please try a different location.</p>
         {% endif %}
-    </section>
 
-    <footer>
-        <p>&copy; 2024 NeuroSynca. All rights reserved.</p>
-    </footer>
+        <a href="{{ url_for('landing') }}" class="btn btn-opacity-success">Go Back Home</a>
+    </div>
+  </section>
+
+    
+
+
+  <!-- Footer -->
+  <footer class="border-top">
+    <p class="text-center text-muted pt-4">&copy; 2024 NeuroSynca. All rights reserved.</p>
+  </footer>
+
+  <!-- Include scripts -->
+  <script src="{{ url_for('static', filename='vendors/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendors/bootstrap/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendors/owl-carousel/js/owl.carousel.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendors/aos/js/aos.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/landingpage.js') }}"></script>
 </body>
 </html>
