@@ -34,8 +34,9 @@ NeuroSynca is a mental health chatbot designed specifically for Black and Latino
 
 To run the application, execute the following command:
 ```bash
-python app.py
+flask run
 ```
+
 
 ## Deployment
 
@@ -43,7 +44,14 @@ The application is hosted on Hostinger and connected to GitHub via CloudPanel fo
 
 ## Contributing
 
-We welcome contributions!
+We welcome contributions! To contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Open a pull request.
 
 
 ## Contact
