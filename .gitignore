@@ -1,3 +1,4 @@
 users.xlsx
 chat_history.db
 __pycache__/
+ml_models/venv

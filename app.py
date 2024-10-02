@@ -2,8 +2,9 @@ import os
 import pandas as pd
 import sqlite3
 from flask import Flask, render_template, request, redirect, url_for, session, flash, jsonify
+from ml_models.model import load_model
 from openai import OpenAI
-from ml_models.find_testing_centers import find_nearby_testing_centers, recommend_test_center
+from ml_models.find_testing_centers import find_nearby_testing_centers, preprocess_input, recommend_test_center
 
 # Initialize OpenAI client with the environment variable
 client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
@@ -215,18 +216,43 @@ def logout():
 def landing():
     return render_template('landing.html')
 
-# Route for finding nearby testing centers using the deep learning model
+
 @app.route('/find_centers', methods=['POST'])
 def find_centers():
     location = request.form['location']
-    service_type = request.form.get('service_type', 'Autism Testing')  # Default service type
+    service_type = request.form.get('service_type', 'Autism Testing')
 
-    # Example: Baltimore coordinates as input (latitude,longitude)
-    user_input = {"location": location, "type": service_type}
-    recommended_center = recommend_test_center(user_input)
 
-    # Pass the recommended center to the template for rendering
+    try:
+        latitude, longitude = map(float, location.split(','))
+    except ValueError:
+        flash('Invalid location format. Please enter as latitude,longitude.', 'danger')
+        return redirect(url_for('landing'))
+
+    try:
+        nearby_centers = find_nearby_testing_centers(location)
+    except Exception as e:
+        app.logger.error(f"Google Places API error: {e}")
+        flash('There was an issue finding nearby centers. Please try again later.', 'danger')
+        return redirect(url_for('landing'))
+
+    if not nearby_centers:
+        flash('No nearby centers found. Please try a different location.', 'danger')
+        return redirect(url_for('landing'))
+
+    try:
+        recommended_center = recommend_test_center(nearby_centers, service_type)
+    except Exception as e:
+        app.logger.error(f"Model recommendation error: {e}")
+        flash('There was an issue recommending a center. Please try again later.', 'danger')
+        return redirect(url_for('landing'))
+
+    if not recommended_center:
+        flash('Could not recommend a center. Please try again later.', 'danger')
+        return redirect(url_for('landing'))
+
     return render_template('centers.html', center=recommended_center)
+
 
 if __name__ == '__main__':
     app.run(debug=True)

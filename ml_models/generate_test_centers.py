@@ -48,7 +48,7 @@ states_and_cities = {
 
 # Function to query Google Places API for testing centers (e.g., hospitals or clinics)
 def get_testing_centers(lat, lng, radius=50000):
-    api_key = os.getenv('GOOGLE_API_KEY')  # Replace with your actual Google API key
+    api_key = os.getenv('GOOGLE_API_KEY')  
     if not api_key:
         raise ValueError("Google API Key not set. Set the GOOGLE_API_KEY environment variable.")
 
