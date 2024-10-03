@@ -7,10 +7,10 @@ from .model import load_model, predict_affordable_centers
 # Load the test centers CSV file
 def load_test_centers():
     try:
-        df = pd.read_csv('ml_models/test_centers.csv')
+        df = pd.read_csv('ml_models/test_centers_with_types_and_prices.csv')
         return df
     except FileNotFoundError:
-        print("Error: test_centers.csv file not found.")
+        print("Error: test_centers_with_types_and_prices.csv file not found.")
         return None
 
 # extract city and state from Google address components
@@ -101,7 +101,7 @@ def recommend_test_center(nearby_centers, service_type):
     predictions = model.predict(processed_inputs) 
     
     for i, center in enumerate(nearby_centers):
-        center['predicted_price'] = predictions[i]
+        center['predicted_price'] = round(predictions[i],2)
         center['testing_type'] = service_type
     
     nearby_centers.sort(key=lambda x: x['predicted_price'])
