@@ -5,4 +5,8 @@ requests
 Flask==2.0.1
 scikit-learn
 joblib
+<<<<<<< HEAD
 werkzeug==2.0.3
+=======
+
+>>>>>>> 9f3ece400788af98ac44e6ce680fcd7d60892e2f
