@@ -156,6 +156,8 @@ def set_specialist(role):
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
+    session.pop('_flashes', None)
+    
     if 'username' in session:
         return redirect(url_for('home'))
 
@@ -180,6 +182,8 @@ def login():
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
+    session.pop('_flashes', None)
+
     if 'username' in session:
         return redirect(url_for('home'))
 
