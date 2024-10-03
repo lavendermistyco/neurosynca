@@ -58,12 +58,14 @@ def write_users_to_excel(df):
     df.to_excel(EXCEL_FILE_PATH, sheet_name='users', index=False)
 
 # Function to generate a response from OpenAI
-def generate_summary(text_input, system_message):
+def generate_summary(text_input, system_message, role):
+     # Greet the user after the role selection
+    greeting_message = f"You are now acting as a {role} specialist. Please greet the user in a human-like way, acknowledging their strength for taking the step to check their mental health."
     try:
         response = client.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[
-                {"role": "system", "content": system_message},
+                {"role": "system", "content": greeting_message},
                 {"role": "user", "content": text_input}
             ]
         )
@@ -91,7 +93,7 @@ def chat():
         specialist = request.form['specialist']
 
         system_message = f"Please act as a {specialist}, respond to all the queries as if you are a {specialist}"
-        response = generate_summary(user_input, system_message)
+        response = generate_summary(user_input, system_message, specialist)
         if response:
             chat_history = session.get('chat_history', [])
             chat_history.append({'role': 'user', 'content': user_input})
@@ -151,13 +153,24 @@ def set_specialist(role):
         return redirect(url_for('login'))
 
     session['specialist'] = role
+    session['chat_history'] = []
     session.modified = True
-    return redirect(url_for('home'))
+
+    system_message = f"You are now acting as a {role} specialist. Please greet the user warmly."
+    greeting_message = generate_summary("Greet the user", system_message)
+
+    if greeting_message:
+        chat_history = session.get('chat_history', [])
+        chat_history.append({'role': 'ai', 'content': greeting_message})
+        session['chat_history'] = chat_history
+
+    # Render chat directly instead of redirecting to home
+    return render_template('index.html', chat_history=session.get('chat_history', []), is_first_input=True, specialist=role)
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     session.pop('_flashes', None)
-    
+
     if 'username' in session:
         return redirect(url_for('home'))
 

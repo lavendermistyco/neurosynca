@@ -63,6 +63,7 @@
         .specialist-button.active {
             background-color: #10243c;
             color: white;
+            font-weight: bold;
         }
         .specialist-button.active .heading {
             font-weight: bold;
@@ -215,7 +216,6 @@
         
         .btn-history {
             position: fixed;
-            position-area: center;
             top: 10px;
             left: 10px;
             background-color: #10243c;
@@ -301,17 +301,17 @@
     </div>
 
     <div class="specialist-buttons">
-        <div class="specialist-button" id="neurosurgeon-button" onclick="setSpecialist('adhd')">
+        <div class="specialist-button" id="adhd-specialist-button" onclick="setSpecialist('adhd specialist')">
             <div class="heading">ADHD</div>
-            <div class="support-text">Expert in understanding ADHD</div>
+            <div class="support-text">Expert in ADHD</div>
         </div>
-        <div class="specialist-button" id="general-physician-button" onclick="setSpecialist('general mental')">
-            <div class="heading">General Mental Health</div>
-            <div class="support-text">General mental health and wellness</div>
+        <div class="specialist-button" id="general-mental-health-specialist-button" onclick="setSpecialist('general mental health specialist')">
+            <div class="heading">General</div>
+            <div class="support-text">General mental health</div>
         </div>
-        <div class="specialist-button" id="brain-specialist-button" onclick="setSpecialist('autism specialist')">
-            <div class="heading">Autism Specialist</div>
-            <div class="support-text">Focus on autism-related issues</div>
+        <div class="specialist-button" id="autism-specialist-button" onclick="setSpecialist('autism specialist')">
+            <div class="heading">Autism</div>
+            <div class="support-text"> Autism-related concerns</div>
         </div>
     </div>
 
@@ -357,13 +357,13 @@
             console.log(`Setting specialist to: ${role}`);
             localStorage.setItem('specialist', role);
     
+            // Deselect all buttons first
             document.querySelectorAll('.specialist-button').forEach(button => {
-                if (button.id === `${role.replace(' ', '-')}-button`) {
-                    button.classList.add('active');
-                } else {
-                    button.classList.remove('active');
-                }
+                button.classList.remove('active'); // Remove active class
             });
+
+            // Set the clicked button as active
+            document.getElementById(`${role.replace(' ', '-')}-button`).classList.add('active');
     
             document.getElementById('specialist').value = role; // Set hidden input value
             document.querySelector('.chat-container').style.display = 'flex';
@@ -377,6 +377,8 @@
             
             if (storedSpecialist) {
                 setSpecialist(storedSpecialist);
+            } else {
+                document.getElementById('specialist').value = '';
             }
             
             const username = "{{ session.get('username') }}";
