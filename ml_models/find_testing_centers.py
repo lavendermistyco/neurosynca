@@ -101,7 +101,7 @@ def recommend_test_center(nearby_centers, service_type):
     predictions = model.predict(processed_inputs) 
     
     for i, center in enumerate(nearby_centers):
-        center['predicted_price'] = predictions[i]
+        center['predicted_price'] = round(predictions[i],2)
         center['testing_type'] = service_type
     
     nearby_centers.sort(key=lambda x: x['predicted_price'])
